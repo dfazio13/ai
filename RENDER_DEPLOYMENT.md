@@ -25,11 +25,13 @@ git add .
 # Commit
 git commit -m "Initial commit - SEBRAE Shiny Chatbot"
 
+git branch -M main2
+
 # Add your GitHub repository
 git remote add origin https://github.com/dfazio13/ai.git
 
 # Push to GitHub
-git push -u origin main
+git push -u origin main2
 ```
 
 2. **Connect to Render:**
