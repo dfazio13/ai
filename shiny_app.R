@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyjs)
 library(httr2)
 library(jsonlite)
 library(DBI)
@@ -219,6 +220,7 @@ generate_audio <- function(text, voice = "nova") {
 # ============================================================================
 
 ui <- page_fluid(
+  useShinyjs(),  # Enable shinyjs
   theme = bs_theme(
     version = 5,
     bg = "#ffffff",

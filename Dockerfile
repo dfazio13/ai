@@ -21,7 +21,8 @@ RUN R -e "install.packages(c( \
     'DBI', \
     'RSQLite', \
     'curl', \
-    'base64enc' \
+    'base64enc', \
+    'shinyjs' \
     ), repos='https://cloud.r-project.org/')"
 
 # Copy application files
