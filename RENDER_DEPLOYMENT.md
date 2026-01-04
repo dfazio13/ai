@@ -14,6 +14,8 @@ This guide will walk you through deploying your SEBRAE chatbot to Render.com so 
 
 1. **Push your code to GitHub:**
 ```bash
+cd "c:/users/dimas/Dropbox/NUS/teaching/2025-2026/AI/render4"
+
 # Initialize git repository
 git init
 
