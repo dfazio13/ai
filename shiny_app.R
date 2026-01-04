@@ -348,7 +348,7 @@ ui <- page_fluid(
       
       .chat-header h2 {
         margin: 0 0 8px 0;
-        font-size: 28px;
+        font-size: 56px;
         font-weight: 600;
         letter-spacing: -0.5px;
       }
@@ -364,7 +364,7 @@ ui <- page_fluid(
       .chat-messages {
         flex: 1;
         overflow-y: auto;
-        padding: 30px 40px;
+        padding: 30px 20px;
         background: linear-gradient(to bottom, #f5f7fa 0%, #e8ecf1 100%);
       }
       
@@ -411,12 +411,12 @@ ui <- page_fluid(
       
       /* Message bubbles */
       .message-bubble {
-        max-width: 65%;
-        padding: 14px 20px;
-        border-radius: 18px;
+        max-width: 95%;
+        padding: 20px 28px;
+        border-radius: 12px;
         word-wrap: break-word;
         white-space: pre-wrap;
-        line-height: 1.5;
+        line-height: 1.6;
         font-size: 15px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
@@ -438,7 +438,7 @@ ui <- page_fluid(
       
       /* Input area - fixed at bottom */
       .chat-input-area {
-        padding: 24px 40px;
+        padding: 24px 20px;
         background: white;
         border-top: 1px solid #e5e7eb;
         box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
@@ -566,7 +566,7 @@ ui <- page_fluid(
         }
         
         .message-bubble {
-          max-width: 85%;
+          max-width: 90%;
           font-size: 14px;
         }
         
