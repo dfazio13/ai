@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sebrae-chatbot
+    env: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ENABLE_AUDIO_RESPONSES
+        value: true
+      - key: AUDIO_VOICE
+        value: nova
+      - key: PORT
+        value: 10000
+    disk:
+      name: chat-data
+      mountPath: /app/data
+      sizeGB: 1

@@ -1,0 +1,59 @@
+# R Environment
+.Renviron
+.Rprofile
+.Rhistory
+.RData
+.Ruserdata
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Data directories
+data/
+audio/
+*.csv
+*.xlsx
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.Rproj
+.Rproj.user/
+
+# Docker
+.dockerignore
+
+# Backup files
+*.bak
+backup_*
+
+# API keys and secrets
+secrets.txt
+api_keys.txt
+
+# Node modules (if any)
+node_modules/
+
+# Python cache (if any)
+__pycache__/
+*.pyc
+
+# Compiled files
+*.o
+*.so
+*.dll
