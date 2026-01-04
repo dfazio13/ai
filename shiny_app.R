@@ -348,7 +348,7 @@ ui <- page_fluid(
       
       .chat-header h2 {
         margin: 0 0 8px 0;
-        font-size: 56px;
+        font-size: 35px;
         font-weight: 600;
         letter-spacing: -0.5px;
       }
