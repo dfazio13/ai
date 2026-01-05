@@ -65,7 +65,7 @@ if (OPENAI_API_KEY == "") {
 }
 
 # Read knowledge base
-kb_file <- file.path(BASE_DIR, "Base_Conhecimento_MEI_SEBRAE_Completa_v2.txt")
+kb_file <- file.path(BASE_DIR, "Base_Conhecimento.txt")
 cat("[CONFIG] Knowledge base file:", kb_file, "\n")
 if (file.exists(kb_file)) {
   cat("[CONFIG] Reading knowledge base...\n")
@@ -145,20 +145,32 @@ ask_flora <- function(question, user_id, con_db, base_knowledge, api_key) {
       list(
         role = "system",
         content = paste(
-          "Você é Mia, especialista SEBRAE que ajuda empreendedores brasileiros a crescerem seus negócios.",
-          "O SEBRAE oferece cursos, consultorias e ferramentas gratuitas para pequenos negócios.",
+          "You are FinMentor, an AI tutor specialized in corporate finance dedicated to making complex concepts crystal clear.",
+          "Your purpose is to ensure every student truly understands the material through clear explanations and step-by-step guidance.",
           "\n\n╔═════════════════════════════════════════╗",
-          "\n║  MISSÃO: Ser útil + Oferecer opções    ║",
+          "\n║  MISSION: Explain clearly + Build mastery ║",
           "\n╚═════════════════════════════════════════╝",
-          "\n\n🔒 REGRA CRÍTICA - USO EXCLUSIVO DA BASE DE CONHECIMENTO:",
-          "\n   ⚠️ Você DEVE usar APENAS informações da base de conhecimento fornecida",
-          "\n   ⚠️ NÃO use conhecimento geral ou externo",
-          "\n   ⚠️ Se a informação NÃO estiver na base, diga: 'Essa informação específica não está disponível.'",
-          "\n\n⚡ IMPORTANTE - LIMITE DE RESPOSTA:",
-          "\n  - Máximo 500 caracteres",
-          "\n  - Use quebras de linha para facilitar leitura",
-          "\n  - Use emojis para destacar informações",
-          "\n\n📚 BASE DE CONHECIMENTO:\n",
+          "\n\n🔒 CRITICAL RULE - KNOWLEDGE BASE ONLY:",
+          "\n   ⚠️ You MUST use ONLY information from the provided course knowledge base",
+          "\n   ⚠️ DO NOT use general knowledge or external sources",
+          "\n   ⚠️ If information is NOT in the knowledge base, say: 'This topic isn't covered in your course materials. Please consult your instructor.'",
+          "\n\n📖 DIDACTIC TEACHING METHOD:",
+          "\n  1. DEFINE: Start with clear definitions using course terminology",
+          "\n  2. EXPLAIN: Break concepts into simple, logical steps",
+          "\n  3. EXAMPLE: Provide concrete examples from the knowledge base",
+          "\n  4. CONNECT: Link to related concepts the student already learned",
+          "\n  5. CHECK: Ask if clarification is needed before moving forward",
+          "\n\n✅ CLARITY STANDARDS:",
+          "\n  - Use simple, direct language - avoid jargon unless defined",
+          "\n  - Number steps clearly (Step 1, Step 2, etc.)",
+          "\n  - Use analogies when they help understanding",
+          "\n  - Highlight formulas separately with clear variable definitions",
+          "\n  - Use emojis: 📌 for definitions, 🔢 for formulas, 💡 for key insights, ⚠️ for common mistakes",
+          "\n\n🎯 RESPONSE STRUCTURE:",
+          "\n  - Short answer: Direct response (200-400 chars)",
+          "\n  - Detailed explanation: Structured teaching (no limit, but stay focused)",
+          "\n  - Always end with: 'Does this make sense? Would you like me to explain any part differently?'",
+          "\n\n📚 COURSE KNOWLEDGE BASE:\n",
           paste(base_knowledge, collapse = "\n")
         )
       )
@@ -348,7 +360,7 @@ ui <- page_fluid(
       
       .chat-header h2 {
         margin: 0 0 8px 0;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: 600;
         letter-spacing: -0.5px;
       }
@@ -523,13 +535,13 @@ ui <- page_fluid(
       .welcome-message h3 {
         color: #2563eb;
         margin-bottom: 16px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
       }
       
       .welcome-message p {
         color: #6b7280;
-        font-size: 16px;
+        font-size: 15px;
       }
       
       /* Audio checkbox */
@@ -585,8 +597,8 @@ ui <- page_fluid(
   
   div(class = "chat-container",
       div(class = "chat-header",
-          h2("💬 Mia - Assistente Virtual SEBRAE"),
-          p("Olá! Sou a Mia, sua especialista em pequenos negócios. Como posso ajudar?")
+          h2("💬 FinMentor"),
+          p("How can I help?")
       ),
       
       div(class = "chat-messages", id = "chat_messages",
@@ -640,17 +652,18 @@ server <- function(input, output, session) {
     if (nrow(history) == 0) {
       cat("[WELCOME] New user detected! Sending welcome message...\n")
       welcome_msg <- paste0(
-        "Olá! 👋 Seja bem-vindo ao SEBRAE!\n\n",
-        "Sou a Mia, sua assistente virtual especialista em pequenos negócios. ",
-        "Estou aqui para te ajudar a crescer! 🚀\n\n",
-        "Posso te ajudar com:\n",
-        "💼 Formalização (abrir MEI, trocar para ME)\n",
-        "💰 Gestão financeira (preços, fluxo de caixa, lucro)\n",
-        "📦 Estoque e fornecedores\n",
-        "📱 Marketing e redes sociais\n",
-        "🎓 Cursos e ferramentas gratuitas\n",
-        "📊 Planejamento do seu negócio\n\n",
-        "Como posso te ajudar hoje? 😊"
+        "Hello! 👋 Welcome to your Corporate Finance course!\n\n",
+        "I'm Professor Finance, your AI tutor dedicated to helping you master financial concepts. ",
+        "I'm here to guide you every step of the way! 📚\n\n",
+        "I can help you with:\n",
+        "💰 Financial Analysis (ratios, statements, performance metrics)\n",
+        "📊 Capital Budgeting (NPV, IRR, project evaluation)\n",
+        "💼 Corporate Valuation (DCF, multiples, company worth)\n",
+        "🏦 Capital Structure (debt, equity, optimal financing)\n",
+        "📈 Risk & Return (CAPM, portfolio theory, cost of capital)\n",
+        "💡 Working Capital Management (cash flow, liquidity)\n",
+        "🎯 Strategic Financial Decisions\n\n",
+        "How can I help you today? 🤓"
       )
       
       log_message(con, user_id, "out", welcome_msg)

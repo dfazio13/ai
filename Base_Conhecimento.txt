@@ -1,0 +1,605 @@
+
+APPLIED CORPORATE FINANCE – COMPREHENSIVE KNOWLEDGE BASE
+Course Overview, NPV, and Capital Budgeting
+Professor Dimas Fazio – National University of Singapore Business School
+
+================================================================================
+SECTION 0. COURSE CONTEXT AND LEARNING OBJECTIVES
+--------------------------------------------------------------------------------
+This knowledge base supports an applied corporate finance course focused on
+investment decision-making, valuation, and capital budgeting.
+
+Core learning objectives:
+1. Understand how firms create value.
+2. Learn how to evaluate investment projects using cash flows.
+3. Master discounting, NPV, and alternative decision rules.
+4. Understand why NPV is the dominant criterion in theory and practice.
+5. Learn how to construct project cash flows from financial statements.
+6. Understand the role of risk, financing, inflation, and opportunity cost.
+
+================================================================================
+SECTION 1. WHAT IS CORPORATE FINANCE?
+--------------------------------------------------------------------------------
+Corporate finance studies how firms allocate resources over time under uncertainty.
+Every decision made by a firm has financial implications.
+
+Definition (Damodaran):
+Every decision that affects the finances of a business is a corporate finance decision.
+
+Corporate finance is typically organized around three questions:
+1. Investment decisions: Which projects should the firm undertake?
+2. Financing decisions: How should the firm fund these projects?
+3. Payout and restructuring decisions: How should cash be returned to investors?
+
+Examples of corporate finance decisions:
+- Launching a new product
+- Buying or selling a factory
+- Mergers and acquisitions
+- Bankruptcy and restructuring
+- Dividend and share repurchase policy
+
+================================================================================
+SECTION 2. THE OBJECTIVE OF THE FIRM
+--------------------------------------------------------------------------------
+Standard assumption:
+The objective of the firm is to maximize firm value.
+
+This assumption:
+- Is descriptive of how capital markets reward managers
+- Provides a clear and consistent decision rule
+- Aligns managerial incentives with shareholder wealth
+
+Value creation principle:
+A firm creates value when the present value of benefits exceeds the present value
+of costs.
+
+Bad decisions:
+- Can increase revenues but destroy value
+- Can be profitable in accounting terms but negative in economic terms
+
+================================================================================
+SECTION 3. CASH FLOWS AND VALUE CREATION
+--------------------------------------------------------------------------------
+Value depends on cash flows, not accounting profits.
+
+Why cash flows?
+- Investors consume cash, not accounting earnings
+- Accounting numbers include non-cash items
+- Accounting rules vary across firms and countries
+
+Relevant cash flows:
+- Incremental
+- After-tax
+- Expected (not realized)
+- Reflect opportunity costs
+
+================================================================================
+SECTION 4. TIME VALUE OF MONEY
+--------------------------------------------------------------------------------
+A dollar today is worth more than a dollar tomorrow.
+
+Reasons:
+1. Opportunity cost: money can be invested
+2. Risk: future cash flows are uncertain
+3. Inflation: purchasing power declines over time
+
+Discounting converts future cash flows into equivalent present values.
+
+================================================================================
+SECTION 5. PRESENT VALUE (PV)
+--------------------------------------------------------------------------------
+Definition:
+The present value is the value today of a stream of future cash flows.
+
+Formula:
+PV = Σ Ct / (1 + r)^t
+
+Where:
+- Ct = cash flow at time t
+- r = discount rate
+
+Interpretation:
+PV answers the question:
+"What is this future stream of cash flows worth today?"
+
+================================================================================
+SECTION 6. DISCOUNT RATE
+--------------------------------------------------------------------------------
+The discount rate reflects:
+- Time value of money
+- Risk of the cash flows
+
+Interpretation:
+The discount rate is the opportunity cost of capital.
+
+Higher risk → higher discount rate → lower present value.
+
+================================================================================
+SECTION 7. PERPETUITIES
+--------------------------------------------------------------------------------
+A perpetuity is a constant cash flow that continues forever.
+
+PV of perpetuity:
+PV = C / r
+
+Economic intuition:
+- Useful for long-lived assets
+- Useful terminal value approximation
+
+Important:
+Perpetuity does NOT mean infinite life in practice.
+For horizons above ~50 periods, perpetuity is an excellent approximation.
+
+================================================================================
+SECTION 8. GROWING PERPETUITIES
+--------------------------------------------------------------------------------
+Cash flows that grow at a constant rate g forever.
+
+PV = C / (r - g)
+
+Conditions:
+- r > g
+- Growth rate must be sustainable
+
+Used extensively in:
+- Firm valuation
+- Terminal value calculations
+
+================================================================================
+SECTION 9. ANNUITIES
+--------------------------------------------------------------------------------
+An annuity is a constant cash flow for a finite number of periods.
+
+PV of annuity:
+PV = (C / r) * [1 - 1 / (1 + r)^T]
+
+Applications:
+- Mortgages
+- Leases
+- Bonds
+
+================================================================================
+SECTION 10. NET PRESENT VALUE (NPV)
+--------------------------------------------------------------------------------
+Definition:
+NPV is the present value of all cash flows, including the initial investment.
+
+Formula:
+NPV = -I + Σ Ct / (1 + r)^t
+
+Decision rule:
+- Accept if NPV > 0
+- Reject if NPV < 0
+
+Economic meaning:
+NPV measures the increase in total firm value from undertaking a project.
+
+================================================================================
+SECTION 11. WHY NPV WORKS
+--------------------------------------------------------------------------------
+NPV:
+- Accounts for time value of money
+- Accounts for risk
+- Uses all cash flows
+- Is consistent with value maximization
+
+NPV is additive:
+- The NPV of multiple projects equals the sum of individual NPVs
+
+================================================================================
+SECTION 12. INTERNAL RATE OF RETURN (IRR)
+--------------------------------------------------------------------------------
+Definition:
+IRR is the discount rate that sets NPV equal to zero.
+
+Decision rule:
+Accept if IRR > cost of capital.
+
+IRR is intuitive because it is expressed in percentage terms.
+
+================================================================================
+SECTION 13. PROBLEMS WITH IRR
+--------------------------------------------------------------------------------
+1. Multiple IRRs:
+Occurs when cash flow signs change more than once.
+
+2. No IRR:
+Occurs when NPV never crosses zero.
+
+3. Mutually exclusive projects:
+IRR may rank projects incorrectly.
+
+4. Scale problem:
+High IRR small projects vs low IRR large projects.
+
+5. Timing problem:
+Different cash flow timing can distort rankings.
+
+Conclusion:
+IRR should never override NPV.
+
+================================================================================
+SECTION 14. PAYBACK PERIOD
+--------------------------------------------------------------------------------
+Definition:
+Time required to recover initial investment from cash flows.
+
+Advantages:
+- Simple
+- Measures liquidity risk
+
+Disadvantages:
+- Ignores time value of money
+- Ignores risk
+- Ignores cash flows after payback
+
+Discounted payback partially fixes the first problem.
+
+================================================================================
+SECTION 15. ACCOUNTING-BASED MEASURES
+--------------------------------------------------------------------------------
+Examples:
+- Return on Assets
+- Accounting Rate of Return
+
+Problems:
+- Based on accounting profits
+- Ignore time value of money
+- Ignore risk
+
+================================================================================
+SECTION 16. CAPITAL BUDGETING PRINCIPLES
+--------------------------------------------------------------------------------
+Incremental cash flows:
+Cash flows with the project minus cash flows without the project.
+
+Ignore:
+- Sunk costs (past costs)
+
+Include:
+- Opportunity costs
+- Cannibalization effects
+- Side effects
+
+================================================================================
+SECTION 17. FREE CASH FLOW TO THE FIRM (FCFF)
+--------------------------------------------------------------------------------
+FCFF represents cash generated by assets, independent of financing.
+
+Formula:
+FCFF = EBIT(1 - t) + Depreciation - CAPEX - ΔNWC
+
+Used for:
+- Project valuation
+- Firm valuation
+
+================================================================================
+SECTION 18. EBIT VS EBITDA METHODS
+--------------------------------------------------------------------------------
+EBIT method:
+FCF = EBIT(1 - t) + Depreciation - CAPEX - ΔNWC
+
+EBITDA method:
+FCF = EBITDA(1 - t) + t*Depreciation - CAPEX - ΔNWC
+
+Both produce identical results when done correctly.
+
+================================================================================
+SECTION 19. DEPRECIATION AND TAX SHIELDS
+--------------------------------------------------------------------------------
+Depreciation:
+- Non-cash
+- Reduces taxable income
+- Creates tax shields
+
+Tax shield:
+Tax rate × depreciation
+
+================================================================================
+SECTION 20. WORKING CAPITAL
+--------------------------------------------------------------------------------
+Net Working Capital (NWC):
+Inventory + Cash + Receivables - Payables
+
+Increases in NWC:
+- Reduce cash flow
+
+Recovery of NWC at project end:
+- Positive cash flow
+
+================================================================================
+SECTION 21. SALVAGE VALUE
+--------------------------------------------------------------------------------
+Cash flow from asset disposal.
+
+Tax treatment depends on comparison between:
+- Sale price
+- Book value
+
+================================================================================
+SECTION 22. SUNK COSTS AND OPPORTUNITY COSTS
+--------------------------------------------------------------------------------
+Sunk costs:
+- Already incurred
+- Irrelevant
+
+Opportunity costs:
+- Value of best alternative use
+- Must be included
+
+================================================================================
+SECTION 23. FINANCING COSTS
+--------------------------------------------------------------------------------
+Interest, dividends, and principal repayments:
+- Are financing cash flows
+- Should NOT be included in project cash flows
+
+They are captured in the discount rate (WACC).
+
+================================================================================
+SECTION 24. INFLATION
+--------------------------------------------------------------------------------
+Nominal cash flows:
+- Include inflation
+
+Real cash flows:
+- Exclude inflation
+
+Consistency rule:
+Nominal cash flows → nominal discount rate
+Real cash flows → real discount rate
+
+Approximation:
+Nominal rate ≈ real rate + inflation
+
+================================================================================
+SECTION 25. SUMMARY
+--------------------------------------------------------------------------------
+- Value depends on discounted cash flows
+- NPV is the primary decision rule
+- Cash flows must be incremental and after-tax
+- Financing affects discount rates, not cash flows
+- Inflation consistency is critical
+
+
+APPLIED CORPORATE FINANCE – COMPREHENSIVE KNOWLEDGE BASE
+SESSION 2: WEIGHTED AVERAGE COST OF CAPITAL (WACC)
+Professor Dimas Fazio – National University of Singapore Business School
+
+================================================================================
+SECTION 0. PURPOSE OF THIS MODULE
+--------------------------------------------------------------------------------
+This module explains how to compute the correct discount rate for risky projects and firms.
+It builds directly on capital budgeting and NPV.
+
+Core questions answered:
+1. What is WACC and why does it matter?
+2. How does risk affect discount rates?
+3. How do we compute WACC in practice?
+4. How does leverage affect risk and beta?
+5. When should we NOT use WACC?
+
+================================================================================
+SECTION 1. WHAT IS WACC?
+--------------------------------------------------------------------------------
+The Weighted Average Cost of Capital (WACC) is the discount rate used to value
+a firm’s or project’s free cash flows to the firm (FCFF).
+
+These cash flows are paid to:
+- Equity holders
+- Debt holders
+
+WACC reflects:
+1. The systematic (non-diversifiable) risk of cash flows
+2. The tax advantage of debt financing (interest tax shields)
+
+Higher systematic risk → higher WACC
+More debt (holding risk constant) → lower WACC due to tax shields
+
+================================================================================
+SECTION 2. KEY ASSUMPTION BEHIND WACC
+--------------------------------------------------------------------------------
+WACC assumes the firm maintains a constant target capital structure.
+
+Target leverage:
+- D / V = target debt-to-enterprise-value ratio
+- V = D + E (enterprise value)
+- D and E should be market values (not book values)
+
+If leverage is NOT expected to remain stable:
+→ WACC should NOT be used
+
+================================================================================
+SECTION 3. THE WACC FORMULA
+--------------------------------------------------------------------------------
+WACC = (D / V) × rD × (1 − τ) + (E / V) × rE
+
+Where:
+- rD = cost of debt
+- rE = cost of equity
+- τ = corporate tax rate
+
+Interpretation:
+- Debt is cheaper than equity due to tax deductibility of interest
+- Equity is riskier and requires a higher expected return
+
+================================================================================
+SECTION 4. WACC AND RISK
+--------------------------------------------------------------------------------
+WACC increases with:
+- Higher business risk
+- Higher exposure to economic cycles
+- Higher equity beta
+
+WACC decreases with:
+- Higher tax rates
+- Moderate increases in leverage (before distress costs)
+
+Important:
+Managers cannot reduce systematic risk by changing leverage.
+Leverage redistributes risk between debt and equity.
+
+================================================================================
+SECTION 5. THREE WAYS TO COMPUTE WACC
+--------------------------------------------------------------------------------
+1. Given cost of equity and cost of debt
+2. Given equity and debt betas (via CAPM)
+3. Using comparable companies
+
+All three approaches should give consistent answers if done correctly.
+
+================================================================================
+SECTION 6. COST OF EQUITY (CAPM)
+--------------------------------------------------------------------------------
+Cost of equity is typically estimated using CAPM:
+
+rE = rF + βE × MRP
+
+Where:
+- rF = risk-free rate
+- βE = equity beta
+- MRP = market risk premium
+
+Equity beta measures exposure to systematic market risk.
+
+================================================================================
+SECTION 7. COST OF DEBT
+--------------------------------------------------------------------------------
+The cost of debt is the expected return required by lenders.
+
+In practice:
+- Often approximated using the yield to maturity (YTM) of outstanding bonds
+- Or the borrowing rate on bank loans
+- Or risk-free rate plus a default spread
+
+Important:
+Promised interest rate ≥ expected return to lenders (if default risk exists)
+
+================================================================================
+SECTION 8. MARKET RISK PREMIUM (MRP)
+--------------------------------------------------------------------------------
+The market risk premium is the expected excess return of the market over the risk-free rate.
+
+Common estimation approaches:
+1. Historical averages (most common)
+2. Surveys of investors
+3. Dividend growth models (least common)
+
+MRP is the least precisely estimated input in WACC.
+
+================================================================================
+SECTION 9. BETA: ECONOMIC MEANING
+--------------------------------------------------------------------------------
+Beta measures systematic risk:
+- Sensitivity of asset returns to market returns
+
+Beta does NOT measure:
+- Total volatility
+- Firm-specific risk (which can be diversified)
+
+Beta is estimated using regressions, but estimates are noisy.
+
+================================================================================
+SECTION 10. LEVERAGE AND SYSTEMATIC RISK
+--------------------------------------------------------------------------------
+Key principle: Conservation of systematic risk
+
+Asset (unlevered) beta:
+βA = (E/V)βE + (D/V)βD
+
+Leverage increases equity beta:
+βE = βU + (D/E)(βU − βD)
+
+If debt is approximately risk-free:
+βE ≈ βU × (1 + D/E)
+
+Interpretation:
+Leverage magnifies equity risk without changing asset risk.
+
+================================================================================
+SECTION 11. UNLEVERING AND RELEVERING BETAS
+--------------------------------------------------------------------------------
+Step 1: Unlever comparable firm beta
+βU = (E/V)βE + (D/V)βD
+
+Step 2: Relever using target capital structure
+βE,target = βU + (D/E)target × (βU − βD)
+
+This allows estimation of project or firm-specific discount rates.
+
+================================================================================
+SECTION 12. USING COMPARABLE COMPANIES
+--------------------------------------------------------------------------------
+When a firm lacks reliable beta estimates:
+- Use comparable firms in the same industry
+- Unlever their betas
+- Average asset betas
+- Relever using target capital structure
+
+This is standard practice in valuation.
+
+================================================================================
+SECTION 13. PROJECT DISCOUNT RATES
+--------------------------------------------------------------------------------
+Rule:
+Cash flows must be discounted at a rate appropriate to their risk.
+
+Implication:
+- Do NOT automatically use firm WACC for all projects
+- Projects with different risk profiles require different discount rates
+
+Otherwise:
+Identical projects would have different values depending on ownership,
+which is inconsistent with market pricing.
+
+================================================================================
+SECTION 14. TAX ADJUSTMENTS AND LIMITATIONS
+--------------------------------------------------------------------------------
+Standard WACC:
+- Accounts only for corporate taxes
+- Ignores investor-level taxes
+
+WACC assumes:
+- Constant leverage
+- Stable tax shields
+
+If leverage changes over time:
+→ Use APV or FCFE instead
+
+================================================================================
+SECTION 15. PRACTICAL INPUT CHOICES
+--------------------------------------------------------------------------------
+Risk-free rate:
+- Long-term government bonds for long-term projects
+
+Debt:
+- Market value if available
+- Book value as proxy if not traded
+
+Equity:
+- Market capitalization
+
+Beta:
+- Prefer industry averages over individual estimates
+
+================================================================================
+SECTION 16. ACCURACY AND LIMITATIONS
+--------------------------------------------------------------------------------
+Sources of error:
+- Beta estimation error (±0.3 common)
+- MRP uncertainty
+- CAPM model limitations
+
+Despite imperfections:
+WACC remains the workhorse discount rate in corporate finance.
+
+================================================================================
+SECTION 17. KEY TAKEAWAYS
+--------------------------------------------------------------------------------
+- WACC is the correct discount rate for FCFF when leverage is stable
+- Risk determines discount rates
+- Leverage reallocates risk but does not eliminate it
+- Comparable firms are critical in practice
+- Using the wrong discount rate destroys value
+
+
