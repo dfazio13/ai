@@ -1,605 +1,3414 @@
-
-APPLIED CORPORATE FINANCE – COMPREHENSIVE KNOWLEDGE BASE
-Course Overview, NPV, and Capital Budgeting
+================================================================================
+APPLIED CORPORATE FINANCE – COMPREHENSIVE TUTOR AI KNOWLEDGE BASE
+Course: NPV, Capital Budgeting, and WACC
 Professor Dimas Fazio – National University of Singapore Business School
+================================================================================
+
+VERSION: 2.0 Enhanced for AI Tutoring
+Last Updated: January 2026
+
+PURPOSE OF THIS DOCUMENT:
+This knowledge base is designed to inform an AI tutor. It includes:
+- Core conceptual content
+- Common student misconceptions
+- Example problems and solutions
+- Pedagogical notes and teaching strategies
+- Cross-references between topics
+- Troubleshooting guidance for common errors
+- Real-world applications and context
 
 ================================================================================
 SECTION 0. COURSE CONTEXT AND LEARNING OBJECTIVES
---------------------------------------------------------------------------------
-This knowledge base supports an applied corporate finance course focused on
-investment decision-making, valuation, and capital budgeting.
+================================================================================
 
-Core learning objectives:
-1. Understand how firms create value.
-2. Learn how to evaluate investment projects using cash flows.
-3. Master discounting, NPV, and alternative decision rules.
-4. Understand why NPV is the dominant criterion in theory and practice.
-5. Learn how to construct project cash flows from financial statements.
-6. Understand the role of risk, financing, inflation, and opportunity cost.
+0.1 COURSE OVERVIEW
+--------------------------------------------------------------------------------
+This course focuses on applied corporate finance with emphasis on:
+- Investment decision-making under uncertainty
+- Valuation methods and techniques
+- Capital budgeting and project evaluation
+- Cost of capital determination
+- Risk assessment and incorporation
+
+Primary Focus Areas:
+1. Time value of money concepts
+2. Cash flow analysis and construction
+3. Net Present Value (NPV) methodology
+4. Alternative decision rules (IRR, Payback, PI)
+5. Weighted Average Cost of Capital (WACC)
+6. Risk, beta, and systematic risk measurement
+
+0.2 CORE LEARNING OBJECTIVES
+--------------------------------------------------------------------------------
+By the end of this course, students should be able to:
+
+1. FUNDAMENTAL UNDERSTANDING
+   - Explain how firms create value through investment decisions
+   - Articulate why cash flows matter more than accounting profits
+   - Understand the time value of money concept
+
+2. ANALYTICAL SKILLS
+   - Calculate present values using various discount techniques
+   - Evaluate investment projects using NPV and other metrics
+   - Construct project cash flows from financial statements
+   - Compute and interpret WACC
+
+3. CRITICAL THINKING
+   - Identify relevant vs. irrelevant cash flows
+   - Recognize when to use NPV vs. other decision rules
+   - Understand the role of risk in valuation
+   - Evaluate the impact of financing decisions on project value
+
+4. PRACTICAL APPLICATION
+   - Apply NPV analysis to real-world business decisions
+   - Estimate appropriate discount rates for projects
+   - Account for taxes, inflation, and opportunity costs
+   - Make value-maximizing investment recommendations
+
+0.3 PEDAGOGICAL APPROACH
+--------------------------------------------------------------------------------
+Teaching Philosophy:
+- Build from intuition to formalism
+- Use real-world examples extensively
+- Address common mistakes explicitly
+- Emphasize "why" before "how"
+- Connect concepts across topics
+
+Key Teaching Challenges:
+1. Students often confuse accounting profit with cash flow
+2. The concept of opportunity cost is frequently misunderstood
+3. Discount rate selection requires judgment, not just calculation
+4. Students may apply formulas mechanically without understanding
+5. Risk concepts (systematic vs. total risk) require careful explanation
 
 ================================================================================
 SECTION 1. WHAT IS CORPORATE FINANCE?
+================================================================================
+
+1.1 FUNDAMENTAL DEFINITION
 --------------------------------------------------------------------------------
-Corporate finance studies how firms allocate resources over time under uncertainty.
-Every decision made by a firm has financial implications.
+Corporate finance is the study of how firms allocate scarce resources over time
+under conditions of uncertainty to maximize value.
 
-Definition (Damodaran):
-Every decision that affects the finances of a business is a corporate finance decision.
+Damodaran's Definition:
+"Every decision that affects the finances of a business is a corporate finance
+decision."
 
-Corporate finance is typically organized around three questions:
-1. Investment decisions: Which projects should the firm undertake?
-2. Financing decisions: How should the firm fund these projects?
-3. Payout and restructuring decisions: How should cash be returned to investors?
+Key Insight:
+Corporate finance is NOT just about raising money or managing investments. It's
+about ALL decisions that have financial implications, including:
+- Operations (pricing, capacity, inventory)
+- Marketing (product launches, advertising)
+- Human resources (hiring, compensation)
+- Strategy (M&A, divestitures, partnerships)
 
-Examples of corporate finance decisions:
-- Launching a new product
-- Buying or selling a factory
-- Mergers and acquisitions
-- Bankruptcy and restructuring
-- Dividend and share repurchase policy
+1.2 THE THREE PILLARS OF CORPORATE FINANCE
+--------------------------------------------------------------------------------
+
+PILLAR 1: INVESTMENT DECISIONS (Capital Budgeting)
+Question: Which projects should the firm undertake?
+Focus: Asset side of the balance sheet
+Key Tool: Net Present Value (NPV)
+
+Examples:
+- Should we build a new factory?
+- Should we launch this new product?
+- Should we acquire this company?
+- Should we upgrade our technology?
+
+PILLAR 2: FINANCING DECISIONS (Capital Structure)
+Question: How should the firm fund these projects?
+Focus: Liability and equity side of the balance sheet
+Key Tool: Cost of Capital (WACC)
+
+Examples:
+- Should we issue debt or equity?
+- What is the optimal debt-to-equity ratio?
+- Should we use bank loans or corporate bonds?
+- When should we refinance existing debt?
+
+PILLAR 3: PAYOUT DECISIONS (Dividend Policy)
+Question: How should cash be returned to investors?
+Focus: Distribution of free cash flows
+Key Tool: Residual dividend model
+
+Examples:
+- Should we pay dividends or repurchase shares?
+- How much cash should we retain for growth?
+- When should we initiate/increase dividends?
+- Should we use special dividends or regular dividends?
+
+1.3 REAL-WORLD EXAMPLES OF CORPORATE FINANCE DECISIONS
+--------------------------------------------------------------------------------
+
+Example 1: Apple's Product Development
+Decision: Invest $1 billion in developing the iPhone
+Type: Investment decision
+Analysis: Estimate development costs, projected sales, profit margins, and
+calculate NPV using appropriate discount rate
+
+Example 2: Netflix's Debt Financing
+Decision: Issue $2 billion in bonds to fund content production
+Type: Financing decision
+Analysis: Compare cost of debt vs. equity, evaluate impact on leverage,
+assess effect on WACC
+
+Example 3: Microsoft's Dividend Increase
+Decision: Increase quarterly dividend from $0.56 to $0.62 per share
+Type: Payout decision
+Analysis: Evaluate available cash, future investment needs, shareholder
+preferences, and tax implications
+
+1.4 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Corporate finance is only for CFOs and finance departments"
+REALITY: Every manager makes decisions with financial implications. Marketing,
+operations, and strategy all require understanding of value creation.
+
+MISCONCEPTION 2: "More revenue always means better decisions"
+REALITY: Revenue growth that costs more than it's worth destroys value. A
+project generating $10M in revenue with $12M in costs is a bad investment.
+
+MISCONCEPTION 3: "Profitable companies don't need corporate finance"
+REALITY: Even profitable firms must allocate capital efficiently. Choosing
+the BEST projects, not just profitable ones, determines success.
+
+MISCONCEPTION 4: "Corporate finance is purely quantitative"
+REALITY: While math is essential, judgment, strategic thinking, and
+qualitative assessment are equally important.
+
+1.5 TEACHING NOTES
+--------------------------------------------------------------------------------
+When introducing corporate finance:
+1. Start with intuitive examples students can relate to (e.g., college education
+   as an investment decision)
+2. Emphasize that CF is about decision-making, not accounting
+3. Use business headlines to show relevance
+4. Preview that all three pillars are interconnected
+5. Explain that this course focuses primarily on Pillar 1 (investment decisions)
 
 ================================================================================
 SECTION 2. THE OBJECTIVE OF THE FIRM
+================================================================================
+
+2.1 VALUE MAXIMIZATION PRINCIPLE
 --------------------------------------------------------------------------------
-Standard assumption:
-The objective of the firm is to maximize firm value.
+Standard Assumption in Corporate Finance:
+The objective of the firm is to MAXIMIZE FIRM VALUE.
 
-This assumption:
-- Is descriptive of how capital markets reward managers
-- Provides a clear and consistent decision rule
-- Aligns managerial incentives with shareholder wealth
+More precisely:
+Maximize the present value of expected future cash flows to all stakeholders
+(equity holders and debt holders).
 
-Value creation principle:
-A firm creates value when the present value of benefits exceeds the present value
-of costs.
+Mathematical Expression:
+Firm Value = PV(All Future Cash Flows)
 
-Bad decisions:
-- Can increase revenues but destroy value
-- Can be profitable in accounting terms but negative in economic terms
+This objective:
+✓ Is descriptive of how capital markets reward managers
+✓ Provides a clear and consistent decision rule
+✓ Aligns managerial incentives with shareholder wealth
+✓ Is measurable and quantifiable
+✓ Facilitates comparison across alternatives
+
+2.2 WHY VALUE MAXIMIZATION?
+--------------------------------------------------------------------------------
+
+REASON 1: Market Discipline
+- Stock prices reflect value creation/destruction
+- Managers who don't maximize value face:
+  * Hostile takeovers
+  * Board pressure
+  * Job loss
+  * Compensation penalties
+
+REASON 2: Clarity
+- Provides unambiguous guidance for decision-making
+- NPV > 0 → Accept
+- NPV < 0 → Reject
+
+REASON 3: Shareholder Primacy
+- Shareholders are residual claimants
+- Maximizing equity value (given debt obligations) maximizes firm value
+- Other stakeholders are protected by contracts
+
+REASON 4: Efficiency
+- Leads to optimal resource allocation in the economy
+- Capital flows to highest-value uses
+
+2.3 VALUE CREATION PRINCIPLE
+--------------------------------------------------------------------------------
+A firm creates value when:
+PV(Benefits) > PV(Costs)
+
+Or equivalently:
+NPV = PV(Benefits) - PV(Costs) > 0
+
+Key Insight:
+"Good" decisions are NOT those that:
+- Increase revenue (revenue may cost too much)
+- Increase profit (profit may not justify investment)
+- Increase market share (share may be bought at negative NPV)
+
+"Good" decisions are those that increase firm value (NPV > 0).
+
+2.4 BAD DECISIONS IN PRACTICE
+--------------------------------------------------------------------------------
+
+Example 1: Revenue Growth Without Value Creation
+A company spends $100M on a marketing campaign that generates $80M in
+additional revenue with 40% margins.
+
+Revenue increase: $80M ✓
+Profit increase: $32M ✓
+Cost: $100M
+Net effect: -$68M ✗
+Decision: BAD (destroys value)
+
+Example 2: Accounting Profit vs. Economic Profit
+A company invests $1M in a project that generates $120K in annual
+accounting profit indefinitely.
+
+Accounting ROI: 12% per year ✓
+Opportunity cost of capital: 15%
+NPV at 15%: $1M - $120K/0.15 = $1M - $800K = -$200K ✗
+Decision: BAD (negative NPV despite positive accounting profit)
+
+Example 3: Market Share at Any Cost
+A company offers aggressive discounts to gain market share, reducing margins
+below the cost of capital.
+
+Market share: Up ✓
+Revenue: Up ✓
+Profit margins: Down ✗
+ROIC: Below WACC ✗
+Decision: BAD (destroys value despite market share gains)
+
+2.5 ALTERNATIVE OBJECTIVES (DISCUSSION)
+--------------------------------------------------------------------------------
+Some argue firms should maximize OTHER objectives:
+
+ALTERNATIVE 1: Profit Maximization
+Problem: Ignores timing and risk of cash flows
+Critique: $1M profit in 1 year ≠ $1M profit in 10 years
+
+ALTERNATIVE 2: Market Share Maximization
+Problem: May require negative NPV investments
+Critique: Dominant market position with negative returns destroys value
+
+ALTERNATIVE 3: Stakeholder Value (ESG)
+Problem: Multiple conflicting objectives
+Critique: Without clear trade-offs, leads to inconsistent decisions
+Note: ESG can be incorporated into value maximization framework
+
+ALTERNATIVE 4: Sales/Revenue Growth
+Problem: Ignores profitability and capital requirements
+Critique: Growth that costs more than it's worth destroys value
+
+2.6 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Maximizing profit is the same as maximizing value"
+REALITY: Profit ignores timing, risk, and required investment. A project with
+$1M profit requiring $20M investment at 10% cost of capital has negative NPV.
+
+MISCONCEPTION 2: "Value maximization means short-term focus"
+REALITY: NPV considers ALL future cash flows. Long-term projects can have
+positive NPV. The issue is whether long-term investments create value.
+
+MISCONCEPTION 3: "Companies should maximize shareholder value at all costs"
+REALITY: Legal and ethical constraints matter. The objective is to maximize
+value WITHIN the bounds of law and social responsibility.
+
+MISCONCEPTION 4: "Non-financial goals are incompatible with value maximization"
+REALITY: Customer satisfaction, employee welfare, and environmental
+responsibility can enhance long-term value. The question is whether the
+benefits justify the costs.
+
+2.7 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching the objective of the firm:
+1. Acknowledge that real-world objectives are more complex
+2. Explain that value maximization is a working assumption, not dogma
+3. Use examples where revenue growth or profit growth destroys value
+4. Discuss agency problems (managers vs. shareholders)
+5. Connect to students' personal decisions (college as value-maximizing investment)
+6. Introduce the concept that value maximization is "first-order" important
 
 ================================================================================
 SECTION 3. CASH FLOWS AND VALUE CREATION
+================================================================================
+
+3.1 FUNDAMENTAL PRINCIPLE: CASH IS KING
 --------------------------------------------------------------------------------
-Value depends on cash flows, not accounting profits.
+Core Principle:
+Value depends on CASH FLOWS, not accounting profits.
 
-Why cash flows?
-- Investors consume cash, not accounting earnings
-- Accounting numbers include non-cash items
-- Accounting rules vary across firms and countries
+Why This Matters:
+Investors consume cash, not earnings. You cannot spend accounting profit.
 
-Relevant cash flows:
-- Incremental
-- After-tax
-- Expected (not realized)
-- Reflect opportunity costs
+Cash Flow vs. Accounting Profit:
+Cash Flow = Money received or paid
+Accounting Profit = Revenue minus expenses (including non-cash items)
+
+The Disconnect:
+A company can be profitable on paper but run out of cash (and go bankrupt).
+A company can have negative accounting profit but generate positive cash flow.
+
+3.2 WHY ACCOUNTING PROFITS ARE INSUFFICIENT
+--------------------------------------------------------------------------------
+
+REASON 1: Non-Cash Expenses
+Accounting profit includes depreciation and amortization, which don't represent
+actual cash outflows in the current period.
+
+Example:
+Revenue: $1,000
+Cash expenses: $600
+Depreciation: $200
+Accounting profit: $200
+Cash flow: $400 (ignoring taxes)
+
+REASON 2: Timing Differences
+Accounting uses accrual basis. Revenue is recognized when earned, not when
+cash is received. Expenses are matched to revenues, not to cash payments.
+
+Example:
+Year 1: Sell product for $1,000 on credit
+Accounting: Record $1,000 revenue
+Cash flow: $0 (if customer hasn't paid)
+
+Year 2: Customer pays $1,000
+Accounting: No additional revenue
+Cash flow: $1,000
+
+REASON 3: Capital Expenditures
+Investment in PP&E is NOT expensed immediately in accounting but IS a cash
+outflow that reduces cash available to investors.
+
+Example:
+Company buys $1M machine with 10-year life
+Accounting expense (annual): $100K depreciation
+Cash outflow: $1M in year 0
+
+REASON 4: Working Capital Changes
+Increases in inventory and accounts receivable tie up cash even though they
+may not impact accounting profit immediately.
+
+REASON 5: Accounting Choices
+Different depreciation methods, inventory valuation (FIFO vs. LIFO), revenue
+recognition policies create artificial differences across firms.
+
+3.3 RELEVANT CASH FLOWS FOR VALUATION
+--------------------------------------------------------------------------------
+
+Cash flows must be:
+
+CHARACTERISTIC 1: INCREMENTAL
+Only include cash flows that occur because of the decision.
+
+Ask: "What changes if we do the project vs. not doing it?"
+
+Include:
+✓ Additional revenues from the project
+✓ Additional costs from the project
+✓ Opportunity costs (forgone alternatives)
+
+Exclude:
+✗ Sunk costs (already incurred, cannot be recovered)
+✗ Allocated overhead (unless it actually increases)
+✗ Financing costs (handled through discount rate)
+
+CHARACTERISTIC 2: AFTER-TAX
+Cash flows should reflect actual tax payments/savings.
+
+Formula:
+After-tax cash flow = Pre-tax cash flow × (1 - tax rate)
+
+Why: Investors receive after-tax cash flows.
+
+CHARACTERISTIC 3: EXPECTED (NOT REALIZED)
+Use expected values, not best-case or worst-case scenarios.
+
+If uncertain:
+Expected CF = Σ [Probability × Cash Flow in each scenario]
+
+CHARACTERISTIC 4: INCLUDE OPPORTUNITY COSTS
+The value of the next-best alternative must be considered.
+
+Example:
+Using land the company already owns? Include the market value of the land
+(what you could sell it for) as an opportunity cost.
+
+3.4 COMMON CASH FLOW ERRORS
+--------------------------------------------------------------------------------
+
+ERROR 1: Including Sunk Costs
+Sunk costs are irrelevant for decision-making.
+
+Example:
+Company spent $500K on R&D for a product. Should they launch?
+WRONG: Include $500K in project costs
+RIGHT: Ignore $500K (it's spent whether we launch or not)
+
+ERROR 2: Forgetting Opportunity Costs
+Opportunity costs are real economic costs even if no cash changes hands.
+
+Example:
+Using warehouse we own for new project.
+WRONG: Assign zero cost because we own it
+RIGHT: Include market rental value (what we could earn leasing it out)
+
+ERROR 3: Including Interest Expense
+Interest is a financing decision, not an operating decision.
+
+Why wrong: Double-counting. Interest is already reflected in the discount rate.
+
+ERROR 4: Ignoring Working Capital
+Changes in working capital affect cash flow.
+
+Increase in WC = Cash outflow (cash tied up)
+Decrease in WC = Cash inflow (cash freed up)
+
+ERROR 5: Using Accounting Numbers Directly
+Must adjust from accounting profit to cash flow.
+
+Adjustments needed:
++ Depreciation & Amortization (non-cash)
+- Capital Expenditures (cash outflow not expensed)
+- Increase in Net Working Capital (cash tied up)
+
+3.5 FROM ACCOUNTING PROFIT TO CASH FLOW
+--------------------------------------------------------------------------------
+
+Standard Formula:
+Free Cash Flow = EBIT × (1 - Tax Rate)
+                 + Depreciation
+                 - Capital Expenditures
+                 - Increase in Net Working Capital
+
+Step-by-Step Logic:
+1. Start with EBIT (operating profit)
+2. Tax it: EBIT × (1 - τ)
+3. Add back non-cash expenses: + Depreciation
+4. Subtract cash investments: - CapEx
+5. Subtract increases in working capital: - ΔNWC
+
+Alternative Formula (from Net Income):
+Free Cash Flow = Net Income
+                 + Depreciation
+                 + Interest × (1 - τ)
+                 - Capital Expenditures
+                 - Increase in Net Working Capital
+
+Note: We add back after-tax interest because FCF is cash available to ALL
+investors (debt and equity), before interest payments.
+
+3.6 WORKING CAPITAL DETAILS
+--------------------------------------------------------------------------------
+
+Net Working Capital (NWC) = Current Assets - Current Liabilities
+
+More specifically:
+NWC = (Accounts Receivable + Inventory) - Accounts Payable
+
+Change in NWC:
+ΔNWC = NWC(end) - NWC(beginning)
+
+Impact on Cash Flow:
+- If NWC increases: Cash flow DECREASES (cash is tied up)
+- If NWC decreases: Cash flow INCREASES (cash is freed up)
+
+Example:
+Year 0: NWC = $100K
+Year 1: NWC = $150K
+ΔNWC = $50K
+Impact: -$50K cash flow (we need to invest $50K more in working capital)
+
+At Project End:
+Assume all working capital is recovered (NWC goes to zero).
+This is a CASH INFLOW in the terminal year.
+
+3.7 PRACTICAL EXAMPLE: COMPLETE CASH FLOW CALCULATION
+--------------------------------------------------------------------------------
+
+Scenario:
+Company considering new product line.
+- Initial equipment cost: $1,000K (depreciated straight-line over 5 years)
+- Expected annual revenue: $800K
+- Expected annual costs (excluding depreciation): $300K
+- Tax rate: 30%
+- Initial working capital: $100K
+- Project life: 5 years
+- Salvage value of equipment: $100K
+- Working capital recovered at end: $100K
+
+Solution:
+
+Year 0 Cash Flow:
+Initial investment: -$1,000K
+Initial working capital: -$100K
+Total: -$1,100K
+
+Years 1-4 Cash Flow (annual):
+Revenue: $800K
+Costs: -$300K
+Depreciation: -$200K ($1,000K / 5 years)
+EBIT: $300K
+Tax (30%): -$90K
+NOPAT: $210K
++ Depreciation: +$200K (add back non-cash expense)
+Free Cash Flow: $410K per year
+
+Year 5 Cash Flow:
+Operating cash flow: $410K (same as years 1-4)
+Salvage value: $100K (after-tax if applicable)
+Working capital recovery: $100K
+Total Year 5 Cash Flow: $610K
+
+Summary:
+Year 0: -$1,100K
+Years 1-4: +$410K each
+Year 5: +$610K
+
+3.8 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Depreciation reduces cash flow"
+REALITY: Depreciation is a non-cash expense. It INCREASES cash flow because
+it reduces taxes (creates a tax shield).
+
+MISCONCEPTION 2: "Sunk costs should be included to 'recover' them"
+REALITY: Sunk costs are irrelevant. Including them leads to bad decisions.
+
+MISCONCEPTION 3: "We own the asset, so it's free to use"
+REALITY: Using owned assets has an opportunity cost (what you could earn by
+selling or renting it).
+
+MISCONCEPTION 4: "Profit and cash flow are basically the same"
+REALITY: They can diverge significantly due to non-cash items, timing, and
+capital investments.
+
+MISCONCEPTION 5: "Working capital doesn't matter much"
+REALITY: Working capital can be substantial, especially for growing firms or
+retail businesses.
+
+3.9 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching cash flows:
+1. Start with simple examples showing accounting profit ≠ cash flow
+2. Use the "Can you spend it?" test
+3. Work through complete examples step-by-step
+4. Emphasize that EVERY cash flow must be incremental
+5. Practice identifying sunk costs vs. opportunity costs
+6. Show how depreciation tax shields increase value
+7. Explain working capital using intuitive examples (retail store expansion)
+
+Critical Teaching Moment:
+Many students mechanically apply formulas without understanding. Require them
+to explain in words WHY each adjustment is made.
 
 ================================================================================
 SECTION 4. TIME VALUE OF MONEY
---------------------------------------------------------------------------------
-A dollar today is worth more than a dollar tomorrow.
-
-Reasons:
-1. Opportunity cost: money can be invested
-2. Risk: future cash flows are uncertain
-3. Inflation: purchasing power declines over time
-
-Discounting converts future cash flows into equivalent present values.
-
 ================================================================================
-SECTION 5. PRESENT VALUE (PV)
+
+4.1 FUNDAMENTAL CONCEPT
 --------------------------------------------------------------------------------
-Definition:
-The present value is the value today of a stream of future cash flows.
+Core Principle:
+A dollar today is worth MORE than a dollar tomorrow.
+
+This is perhaps THE most fundamental concept in finance.
+
+Implications:
+- We cannot simply add cash flows occurring at different times
+- Future cash flows must be "discounted" to present values
+- The discount rate reflects the time value of money
 
 Formula:
-PV = Σ Ct / (1 + r)^t
+PV = FV / (1 + r)^t
 
 Where:
-- Ct = cash flow at time t
-- r = discount rate
+PV = Present Value
+FV = Future Value
+r = discount rate (per period)
+t = number of periods
+
+4.2 WHY MONEY HAS TIME VALUE: THE THREE REASONS
+--------------------------------------------------------------------------------
+
+REASON 1: OPPORTUNITY COST (Positive Interest Rates)
+Money received today can be invested to earn a return.
+
+Example:
+Receive $100 today → Invest at 10% → Have $110 in one year
+Receive $100 in one year → Have $100 in one year
+
+Therefore: $100 today > $100 in one year
+
+Implication:
+To be indifferent, the future payment must compensate for the forgone
+investment return.
+
+REASON 2: RISK AND UNCERTAINTY
+Future cash flows are uncertain. There's risk you might not receive them.
+
+Sources of Uncertainty:
+- Business risk (project might fail)
+- Default risk (borrower might not pay)
+- Economic risk (recession might occur)
+
+Implication:
+Risky future cash flows are worth less than certain current cash flows.
+Higher risk → larger discount → lower present value.
+
+REASON 3: INFLATION
+The purchasing power of money declines over time.
+
+Example:
+$100 today buys a basket of goods
+$100 in one year (with 3% inflation) buys 3% less
+
+Implication:
+To maintain purchasing power, future cash must be larger to compensate.
+
+Note: In most corporate finance applications, we use NOMINAL cash flows and
+NOMINAL discount rates (both including inflation).
+
+4.3 PRESENT VALUE: THE FUNDAMENTAL TOOL
+--------------------------------------------------------------------------------
+
+Definition:
+Present Value is the value TODAY of a stream of future cash flows.
+
+Single Cash Flow:
+PV = CF / (1 + r)^t
+
+Multiple Cash Flows:
+PV = CF₁/(1+r)¹ + CF₂/(1+r)² + ... + CFₙ/(1+r)ⁿ
+
+Or:
+PV = Σ [CFₜ / (1+r)^t]  for t = 1 to n
 
 Interpretation:
-PV answers the question:
-"What is this future stream of cash flows worth today?"
+PV answers: "How much would I pay today for the right to receive these future
+cash flows?"
 
-================================================================================
-SECTION 6. DISCOUNT RATE
+4.4 FUTURE VALUE: THE INVERSE OPERATION
 --------------------------------------------------------------------------------
-The discount rate reflects:
-- Time value of money
-- Risk of the cash flows
+
+Definition:
+Future Value is the value AT A FUTURE DATE of cash flows received earlier.
+
+Single Cash Flow:
+FV = PV × (1 + r)^t
+
+Multiple Cash Flows (future value at time T):
+FV = CF₁(1+r)^(T-1) + CF₂(1+r)^(T-2) + ... + CFₙ(1+r)^(T-n)
 
 Interpretation:
-The discount rate is the opportunity cost of capital.
+FV answers: "If I invest today, how much will I have in the future?"
 
-Higher risk → higher discount rate → lower present value.
+Relationship:
+PV and FV are inverses:
+FV = PV × (1 + r)^t
+PV = FV / (1 + r)^t
+
+4.5 THE DISCOUNT RATE: WHAT DETERMINES IT?
+--------------------------------------------------------------------------------
+
+The discount rate (r) reflects TWO things:
+1. Time preference (opportunity cost of waiting)
+2. Risk (uncertainty of receiving the cash flow)
+
+Components of Discount Rate:
+r = Risk-free rate + Risk premium
+
+Risk-free rate:
+- Compensation for time (delay)
+- Typically approximated by government bond yields
+
+Risk premium:
+- Compensation for uncertainty
+- Higher for riskier projects
+- Reflects systematic (non-diversifiable) risk
+
+Key Principle:
+Different cash flows require different discount rates based on their risk.
+Safe cash flows → low r
+Risky cash flows → high r
+
+4.6 COMPOUNDING FREQUENCY
+--------------------------------------------------------------------------------
+
+Most finance problems assume ANNUAL compounding, but other frequencies exist.
+
+Annual Compounding:
+FV = PV × (1 + r)^t
+
+Semi-annual Compounding:
+FV = PV × (1 + r/2)^(2t)
+
+Quarterly Compounding:
+FV = PV × (1 + r/4)^(4t)
+
+Monthly Compounding:
+FV = PV × (1 + r/12)^(12t)
+
+Continuous Compounding:
+FV = PV × e^(rt)
+
+Effective Annual Rate (EAR):
+The actual annual rate after accounting for compounding within the year.
+
+EAR = (1 + r/m)^m - 1
+
+Where m = number of compounding periods per year.
+
+Example:
+Nominal rate: 12% per year, compounded monthly
+EAR = (1 + 0.12/12)^12 - 1 = 1.01^12 - 1 ≈ 12.68%
+
+4.7 PRACTICAL EXAMPLES
+--------------------------------------------------------------------------------
+
+Example 1: Simple Present Value
+You will receive $10,000 in 5 years. Discount rate is 8%.
+What is this worth today?
+
+Solution:
+PV = $10,000 / (1.08)^5
+PV = $10,000 / 1.469
+PV = $6,806
+
+Interpretation: $6,806 today is equivalent to $10,000 in 5 years at 8%.
+
+Example 2: Multiple Cash Flows
+You will receive $1,000 in year 1, $2,000 in year 2, and $3,000 in year 3.
+Discount rate is 10%. What is the present value?
+
+Solution:
+PV = $1,000/(1.10)¹ + $2,000/(1.10)² + $3,000/(1.10)³
+PV = $909 + $1,653 + $2,254
+PV = $4,816
+
+Example 3: Impact of Risk on Discount Rate
+Same cash flows as Example 2, but now discount rate is 15% (riskier).
+
+Solution:
+PV = $1,000/(1.15)¹ + $2,000/(1.15)² + $3,000/(1.15)³
+PV = $870 + $1,512 + $1,973
+PV = $4,355
+
+Notice: Higher risk (higher discount rate) → Lower present value
+Difference: $4,816 - $4,355 = $461 (almost 10% less value)
+
+4.8 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Future value is always higher than present value"
+REALITY: With negative discount rates (rare), future value can be lower.
+Also, this is only true for positive cash flows.
+
+MISCONCEPTION 2: "Time value of money only matters for long periods"
+REALITY: Even short time periods matter, especially with high discount rates
+or large amounts.
+
+MISCONCEPTION 3: "All cash flows should use the same discount rate"
+REALITY: Riskier cash flows require higher discount rates. The discount rate
+must match the risk of the cash flows.
+
+MISCONCEPTION 4: "Compounding frequency doesn't matter much"
+REALITY: With high rates or long periods, compounding frequency significantly
+affects outcomes.
+
+MISCONCEPTION 5: "Present value means today's market price"
+REALITY: PV is what something SHOULD be worth given expected cash flows and
+appropriate discount rate. Market price may differ due to mispricing.
+
+4.9 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching time value of money:
+1. Start with intuitive examples (Would you rather have $100 today or $100
+   next year? Why?)
+2. Show how small differences in discount rates or time periods compound
+3. Use timelines to visualize cash flows
+4. Emphasize that discounting and compounding are inverse operations
+5. Practice with varied examples (positive and negative cash flows, different
+   timing patterns)
+6. Demonstrate sensitivity to discount rate changes
+7. Connect to students' lives (student loans, savings, retirement planning)
+
+Critical Concept:
+The discount rate is NOT arbitrary. It reflects opportunity cost and risk.
+Using the wrong discount rate leads to bad decisions.
 
 ================================================================================
-SECTION 7. PERPETUITIES
+SECTION 5. PRESENT VALUE FORMULAS AND SHORTCUTS
+================================================================================
+
+5.1 GENERAL PRESENT VALUE FORMULA
 --------------------------------------------------------------------------------
+
+For any series of cash flows:
+PV = Σ [CFₜ / (1+r)^t]  for t = 1 to n
+
+This is the fundamental formula. All other formulas are special cases.
+
+When to use:
+- When cash flows are irregular
+- When no pattern exists
+- When other shortcuts don't apply
+
+Limitations:
+- Requires calculation for each period
+- Can be tedious for long periods
+
+5.2 PERPETUITIES
+--------------------------------------------------------------------------------
+
+Definition:
 A perpetuity is a constant cash flow that continues forever.
 
-PV of perpetuity:
+Formula:
 PV = C / r
 
-Economic intuition:
-- Useful for long-lived assets
-- Useful terminal value approximation
+Where:
+C = constant cash flow per period
+r = discount rate per period
 
-Important:
-Perpetuity does NOT mean infinite life in practice.
-For horizons above ~50 periods, perpetuity is an excellent approximation.
+Derivation (Intuition):
+If you invest PV = C/r at rate r, you earn C per period forever without
+depleting principal.
 
-================================================================================
-SECTION 8. GROWING PERPETUITIES
+Example:
+Annual cash flow: $1,000
+Discount rate: 10%
+PV = $1,000 / 0.10 = $10,000
+
+Check: $10,000 invested at 10% earns $1,000 per year forever ✓
+
+When to Use Perpetuities:
+1. Valuing very long-lived cash flows (>50 years)
+2. Terminal value calculations in DCF models
+3. Valuing certain types of bonds (consols)
+4. Approximating firm value with stable cash flows
+
+Important Note:
+"Perpetuity" does NOT mean infinite life literally. It's an approximation.
+For practical purposes, 50 years ≈ forever because distant cash flows have
+minimal present value.
+
+Mathematical Insight:
+Why does the formula work?
+
+PV = C/(1+r) + C/(1+r)² + C/(1+r)³ + ...
+
+This is a geometric series with first term a = C/(1+r) and ratio x = 1/(1+r).
+
+Sum of infinite geometric series = a / (1-x)
+
+PV = [C/(1+r)] / [1 - 1/(1+r)]
+PV = C/(1+r) × [(1+r)/r]
+PV = C/r ✓
+
+5.3 GROWING PERPETUITIES
 --------------------------------------------------------------------------------
-Cash flows that grow at a constant rate g forever.
 
+Definition:
+A cash flow that grows at constant rate g forever.
+
+Formula:
 PV = C / (r - g)
 
-Conditions:
-- r > g
-- Growth rate must be sustainable
+Where:
+C = cash flow in first period
+r = discount rate
+g = growth rate
 
-Used extensively in:
-- Firm valuation
-- Terminal value calculations
+Critical Condition:
+r > g (discount rate must exceed growth rate)
 
-================================================================================
-SECTION 9. ANNUITIES
---------------------------------------------------------------------------------
-An annuity is a constant cash flow for a finite number of periods.
+Why: If g ≥ r, the present value would be infinite (mathematically) or
+undefined (economically).
 
-PV of annuity:
-PV = (C / r) * [1 - 1 / (1 + r)^T]
+Example:
+First cash flow: $1,000
+Growth rate: 3% per year
+Discount rate: 10%
+
+PV = $1,000 / (0.10 - 0.03) = $1,000 / 0.07 = $14,286
+
+Check the cash flows:
+Year 1: $1,000
+Year 2: $1,030 (grows at 3%)
+Year 3: $1,061
+And so on...
 
 Applications:
-- Mortgages
-- Leases
-- Bonds
+1. Terminal value in DCF (most important application)
+2. Dividend discount model for stable firms
+3. Real estate valuation with rent growth
+4. Infrastructure valuations
 
-================================================================================
-SECTION 10. NET PRESENT VALUE (NPV)
+Economic Interpretation:
+The growing perpetuity captures both:
+- Initial cash yield (C/V)
+- Expected growth (g)
+Therefore: r = C/V + g (similar to dividend yield plus growth)
+
+Derivation (Algebraic):
+PV = C/(1+r) + Cg)/(1+r)² + C(1+g)²/(1+r)³ + ...
+PV = C/(1+r) × [1 + (1+g)/(1+r) + ((1+g)/(1+r))² + ...]
+
+This is a geometric series with ratio = (1+g)/(1+r)
+
+PV = [C/(1+r)] / [1 - (1+g)/(1+r)]
+PV = C/(1+r) × [(1+r)/(r-g)]
+PV = C / (r-g) ✓
+
+5.4 ANNUITIES
 --------------------------------------------------------------------------------
+
 Definition:
-NPV is the present value of all cash flows, including the initial investment.
+An annuity is a constant cash flow for a FINITE number of periods.
 
 Formula:
-NPV = -I + Σ Ct / (1 + r)^t
+PV = (C/r) × [1 - 1/(1+r)^T]
 
-Decision rule:
-- Accept if NPV > 0
-- Reject if NPV < 0
-
-Economic meaning:
-NPV measures the increase in total firm value from undertaking a project.
-
-================================================================================
-SECTION 11. WHY NPV WORKS
---------------------------------------------------------------------------------
-NPV:
-- Accounts for time value of money
-- Accounts for risk
-- Uses all cash flows
-- Is consistent with value maximization
-
-NPV is additive:
-- The NPV of multiple projects equals the sum of individual NPVs
-
-================================================================================
-SECTION 12. INTERNAL RATE OF RETURN (IRR)
---------------------------------------------------------------------------------
-Definition:
-IRR is the discount rate that sets NPV equal to zero.
-
-Decision rule:
-Accept if IRR > cost of capital.
-
-IRR is intuitive because it is expressed in percentage terms.
-
-================================================================================
-SECTION 13. PROBLEMS WITH IRR
---------------------------------------------------------------------------------
-1. Multiple IRRs:
-Occurs when cash flow signs change more than once.
-
-2. No IRR:
-Occurs when NPV never crosses zero.
-
-3. Mutually exclusive projects:
-IRR may rank projects incorrectly.
-
-4. Scale problem:
-High IRR small projects vs low IRR large projects.
-
-5. Timing problem:
-Different cash flow timing can distort rankings.
-
-Conclusion:
-IRR should never override NPV.
-
-================================================================================
-SECTION 14. PAYBACK PERIOD
---------------------------------------------------------------------------------
-Definition:
-Time required to recover initial investment from cash flows.
-
-Advantages:
-- Simple
-- Measures liquidity risk
-
-Disadvantages:
-- Ignores time value of money
-- Ignores risk
-- Ignores cash flows after payback
-
-Discounted payback partially fixes the first problem.
-
-================================================================================
-SECTION 15. ACCOUNTING-BASED MEASURES
---------------------------------------------------------------------------------
-Examples:
-- Return on Assets
-- Accounting Rate of Return
-
-Problems:
-- Based on accounting profits
-- Ignore time value of money
-- Ignore risk
-
-================================================================================
-SECTION 16. CAPITAL BUDGETING PRINCIPLES
---------------------------------------------------------------------------------
-Incremental cash flows:
-Cash flows with the project minus cash flows without the project.
-
-Ignore:
-- Sunk costs (past costs)
-
-Include:
-- Opportunity costs
-- Cannibalization effects
-- Side effects
-
-================================================================================
-SECTION 17. FREE CASH FLOW TO THE FIRM (FCFF)
---------------------------------------------------------------------------------
-FCFF represents cash generated by assets, independent of financing.
-
-Formula:
-FCFF = EBIT(1 - t) + Depreciation - CAPEX - ΔNWC
-
-Used for:
-- Project valuation
-- Firm valuation
-
-================================================================================
-SECTION 18. EBIT VS EBITDA METHODS
---------------------------------------------------------------------------------
-EBIT method:
-FCF = EBIT(1 - t) + Depreciation - CAPEX - ΔNWC
-
-EBITDA method:
-FCF = EBITDA(1 - t) + t*Depreciation - CAPEX - ΔNWC
-
-Both produce identical results when done correctly.
-
-================================================================================
-SECTION 19. DEPRECIATION AND TAX SHIELDS
---------------------------------------------------------------------------------
-Depreciation:
-- Non-cash
-- Reduces taxable income
-- Creates tax shields
-
-Tax shield:
-Tax rate × depreciation
-
-================================================================================
-SECTION 20. WORKING CAPITAL
---------------------------------------------------------------------------------
-Net Working Capital (NWC):
-Inventory + Cash + Receivables - Payables
-
-Increases in NWC:
-- Reduce cash flow
-
-Recovery of NWC at project end:
-- Positive cash flow
-
-================================================================================
-SECTION 21. SALVAGE VALUE
---------------------------------------------------------------------------------
-Cash flow from asset disposal.
-
-Tax treatment depends on comparison between:
-- Sale price
-- Book value
-
-================================================================================
-SECTION 22. SUNK COSTS AND OPPORTUNITY COSTS
---------------------------------------------------------------------------------
-Sunk costs:
-- Already incurred
-- Irrelevant
-
-Opportunity costs:
-- Value of best alternative use
-- Must be included
-
-================================================================================
-SECTION 23. FINANCING COSTS
---------------------------------------------------------------------------------
-Interest, dividends, and principal repayments:
-- Are financing cash flows
-- Should NOT be included in project cash flows
-
-They are captured in the discount rate (WACC).
-
-================================================================================
-SECTION 24. INFLATION
---------------------------------------------------------------------------------
-Nominal cash flows:
-- Include inflation
-
-Real cash flows:
-- Exclude inflation
-
-Consistency rule:
-Nominal cash flows → nominal discount rate
-Real cash flows → real discount rate
-
-Approximation:
-Nominal rate ≈ real rate + inflation
-
-================================================================================
-SECTION 25. SUMMARY
---------------------------------------------------------------------------------
-- Value depends on discounted cash flows
-- NPV is the primary decision rule
-- Cash flows must be incremental and after-tax
-- Financing affects discount rates, not cash flows
-- Inflation consistency is critical
-
-
-APPLIED CORPORATE FINANCE – COMPREHENSIVE KNOWLEDGE BASE
-SESSION 2: WEIGHTED AVERAGE COST OF CAPITAL (WACC)
-Professor Dimas Fazio – National University of Singapore Business School
-
-================================================================================
-SECTION 0. PURPOSE OF THIS MODULE
---------------------------------------------------------------------------------
-This module explains how to compute the correct discount rate for risky projects and firms.
-It builds directly on capital budgeting and NPV.
-
-Core questions answered:
-1. What is WACC and why does it matter?
-2. How does risk affect discount rates?
-3. How do we compute WACC in practice?
-4. How does leverage affect risk and beta?
-5. When should we NOT use WACC?
-
-================================================================================
-SECTION 1. WHAT IS WACC?
---------------------------------------------------------------------------------
-The Weighted Average Cost of Capital (WACC) is the discount rate used to value
-a firm’s or project’s free cash flows to the firm (FCFF).
-
-These cash flows are paid to:
-- Equity holders
-- Debt holders
-
-WACC reflects:
-1. The systematic (non-diversifiable) risk of cash flows
-2. The tax advantage of debt financing (interest tax shields)
-
-Higher systematic risk → higher WACC
-More debt (holding risk constant) → lower WACC due to tax shields
-
-================================================================================
-SECTION 2. KEY ASSUMPTION BEHIND WACC
---------------------------------------------------------------------------------
-WACC assumes the firm maintains a constant target capital structure.
-
-Target leverage:
-- D / V = target debt-to-enterprise-value ratio
-- V = D + E (enterprise value)
-- D and E should be market values (not book values)
-
-If leverage is NOT expected to remain stable:
-→ WACC should NOT be used
-
-================================================================================
-SECTION 3. THE WACC FORMULA
---------------------------------------------------------------------------------
-WACC = (D / V) × rD × (1 − τ) + (E / V) × rE
+Alternative form:
+PV = C × [(1 - (1+r)^(-T)) / r]
 
 Where:
-- rD = cost of debt
-- rE = cost of equity
-- τ = corporate tax rate
+C = constant cash flow per period
+r = discount rate
+T = number of periods
+
+Intuition:
+PV(annuity) = PV(perpetuity) - PV(perpetuity starting at T+1)
+
+PV = C/r - [C/r × 1/(1+r)^T]
+PV = (C/r) × [1 - 1/(1+r)^T] ✓
+
+Example:
+Annual payment: $5,000
+Discount rate: 8%
+Number of years: 10
+
+PV = ($5,000/0.08) × [1 - 1/(1.08)^10]
+PV = $62,500 × [1 - 0.463]
+PV = $62,500 × 0.537
+PV = $33,550
+
+Applications:
+1. Mortgage payments
+2. Car loans
+3. Lease payments
+4. Bond coupon payments
+5. Lottery winnings (if paid over time)
+6. Retirement annuities
+
+Annuity Due vs. Ordinary Annuity:
+- Ordinary annuity: Payments at END of each period (most common assumption)
+- Annuity due: Payments at BEGINNING of each period
+
+PV(annuity due) = PV(ordinary annuity) × (1 + r)
+
+Why: Each payment comes one period earlier, so multiply by (1+r).
+
+5.5 GROWING ANNUITIES
+--------------------------------------------------------------------------------
+
+Definition:
+A cash flow that grows at constant rate g for T periods.
+
+Formula:
+PV = C/(r-g) × [1 - ((1+g)/(1+r))^T]
+
+Where:
+C = first period cash flow
+r = discount rate
+g = growth rate
+T = number of periods
+
+Condition:
+Works for any r and g (r does not need to exceed g for finite periods)
+
+Example:
+First payment: $1,000
+Growth rate: 5%
+Discount rate: 10%
+Number of periods: 20
+
+PV = $1,000/(0.10-0.05) × [1 - (1.05/1.10)^20]
+PV = $1,000/0.05 × [1 - 0.377]
+PV = $20,000 × 0.623
+PV = $12,460
+
+Applications:
+- Valuing cash flows with expected growth (revenues, dividends)
+- Salary projections with inflation
+- Retirement planning with growing expenses
+
+Special Case: When g = r
+PV = C × T / (1+r)
+
+Derivation is more complex; requires L'Hôpital's rule.
+
+5.6 WHICH FORMULA TO USE? DECISION TREE
+--------------------------------------------------------------------------------
+
+START: Do you have a stream of cash flows?
+│
+├─ NO → Use single CF formula: PV = CF / (1+r)^t
+│
+└─ YES → Are cash flows constant (same amount each period)?
+    │
+    ├─ NO → Are cash flows growing at constant rate?
+    │   │
+    │   ├─ NO → Use general formula: PV = Σ [CFₜ / (1+r)^t]
+    │   │
+    │   └─ YES → Do they continue forever?
+    │       │
+    │       ├─ YES → Growing perpetuity: PV = C/(r-g)
+    │       │
+    │       └─ NO → Growing annuity: PV = C/(r-g) × [1 - ((1+g)/(1+r))^T]
+    │
+    └─ YES (Constant CFs) → Do they continue forever?
+        │
+        ├─ YES → Perpetuity: PV = C/r
+        │
+        └─ NO → Annuity: PV = (C/r) × [1 - 1/(1+r)^T]
+
+5.7 PRACTICAL EXAMPLES WITH MULTIPLE FORMULAS
+--------------------------------------------------------------------------------
+
+Example 1: Retirement Planning
+You need $50,000 per year in retirement for 30 years.
+How much do you need to save if you earn 6% per year?
+
+Solution:
+This is an annuity (constant payment for finite period).
+PV = ($50,000/0.06) × [1 - 1/(1.06)^30]
+PV = $833,333 × [1 - 0.174]
+PV = $833,333 × 0.826
+PV = $688,195
+
+Example 2: Real Estate Valuation
+A property generates $100,000 rent per year, growing at 2% per year forever.
+Required return is 8%. What is it worth?
+
+Solution:
+This is a growing perpetuity.
+PV = $100,000 / (0.08 - 0.02)
+PV = $100,000 / 0.06
+PV = $1,666,667
+
+Example 3: Lottery Winnings
+You win $10M, paid as $500K per year for 20 years.
+What is the present value if discount rate is 5%?
+
+Solution:
+This is an annuity.
+PV = ($500,000/0.05) × [1 - 1/(1.05)^20]
+PV = $10,000,000 × [1 - 0.377]
+PV = $10,000,000 × 0.623
+PV = $6,230,000
+
+Note: The "advertised" $10M is not the real value. Present value is $6.23M.
+
+5.8 COMMON STUDENT ERRORS
+--------------------------------------------------------------------------------
+
+ERROR 1: Using perpetuity formula when cash flows are finite
+WRONG: PV = C/r for 20 years of cash flows
+RIGHT: Use annuity formula
+
+ERROR 2: Forgetting that C is the FIRST cash flow in growing perpetuity
+WRONG: Discounting first cash flow again
+RIGHT: C is already the year 1 cash flow
+
+ERROR 3: Using growing perpetuity when g > r
+WRONG: PV = $100 / (0.05 - 0.08) = -$3,333 ???
+RIGHT: Formula doesn't apply. Either project is infinite value or g is not
+sustainable.
+
+ERROR 4: Mixing up annuity and perpetuity formulas
+Common mistake: Using C/r when cash flows are finite
+
+ERROR 5: Using nominal cash flows with real discount rates (or vice versa)
+WRONG: Real cash flows with nominal discount rate
+RIGHT: Match real with real, or nominal with nominal
+
+5.9 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching PV formulas:
+1. Start with general formula, then show shortcuts
+2. Emphasize that shortcuts are just conveniences
+3. Use timelines to visualize patterns
+4. Practice identifying which formula applies
+5. Show how formulas are derived (helps with understanding)
+6. Warn against mechanically applying formulas without thinking
+7. Demonstrate sensitivity to parameters (r, g, T)
+
+Memory Aid for Students:
+"PGAP" - Perpetuity, Growing Perpetuity, Annuity, General
+- Perpetuity: C/r (simplest)
+- Growing Perpetuity: C/(r-g) (add growth)
+- Annuity: (C/r)[1 - 1/(1+r)^T] (add finite horizon)
+- General: No shortcut, calculate term by term
+
+Critical Insight:
+These formulas quantify the time value of money for common patterns.
+Understanding WHEN to use each formula is as important as knowing the formula.
+
+================================================================================
+SECTION 6. NET PRESENT VALUE (NPV)
+================================================================================
+
+6.1 FUNDAMENTAL DEFINITION
+--------------------------------------------------------------------------------
+
+Net Present Value (NPV) is the present value of ALL cash flows from a project,
+including the initial investment.
+
+Formula:
+NPV = -I₀ + Σ [CFₜ / (1+r)^t]  for t = 1 to n
+
+Where:
+I₀ = initial investment (cash outflow at t=0)
+CFₜ = cash flow at time t
+r = discount rate (cost of capital)
+n = project life
+
+Alternative notation:
+NPV = Σ [CFₜ / (1+r)^t]  for t = 0 to n
+
+Where CF₀ = -I₀ (negative because it's an outflow)
+
+Economic Meaning:
+NPV measures the INCREASE IN FIRM VALUE from undertaking the project.
+
+NPV > 0: Project creates value → ACCEPT
+NPV = 0: Project neither creates nor destroys value → INDIFFERENT
+NPV < 0: Project destroys value → REJECT
+
+6.2 THE NPV DECISION RULE
+--------------------------------------------------------------------------------
+
+NPV RULE:
+Accept all projects with NPV > 0.
+Reject all projects with NPV < 0.
+
+This rule MAXIMIZES firm value.
+
+Why NPV Works:
+1. Accounts for time value of money (discounts future cash flows)
+2. Accounts for risk (through discount rate)
+3. Uses ALL cash flows (not just subset)
+4. Is additive (NPV of A+B = NPV(A) + NPV(B))
+5. Is consistent with value maximization objective
+
+Mathematical Proof of Value Creation:
+If NPV > 0, then:
+PV(Cash Inflows) > PV(Cash Outflows)
+Benefits > Costs
+Therefore: Project increases wealth
+
+6.3 NPV VS. PROJECT RETURN
+--------------------------------------------------------------------------------
+
+Key Insight:
+NPV measures VALUE CREATED in dollars.
+It does NOT measure percentage return.
+
+Example:
+Project A: I₀ = $100, PV(CFs) = $150, NPV = $50
+Project B: I₀ = $1,000, PV(CFs) = $1,200, NPV = $200
+
+Which is better?
+- Project B creates more value ($200 vs. $50)
+- Project A has higher return (50% vs. 20%)
+
+If capital is unlimited: Take both (both have NPV > 0)
+If capital is limited (can only choose one): Take B (higher NPV)
+
+This is why NPV is superior to percentage-based metrics.
+
+6.4 THE DISCOUNT RATE IN NPV
+--------------------------------------------------------------------------------
+
+The discount rate (r) in NPV represents:
+1. The opportunity cost of capital
+2. The required return for the project's risk level
+
+How to determine r:
+- For firm-level projects: Use WACC
+- For divisional projects: Use division-specific WACC
+- For projects with different risk: Adjust for risk
+
+Critical Principle:
+The discount rate must match the risk of the cash flows.
+
+Impact of Discount Rate on NPV:
+- Higher r → Lower NPV (future cash flows worth less)
+- Lower r → Higher NPV (future cash flows worth more)
+
+Sensitivity Analysis:
+Always test NPV across a range of discount rates.
+
+Example:
+Project with I₀ = $1,000 and $300/year for 5 years
+
+At r = 5%: NPV = -$1,000 + $300 × 4.329 = $299
+At r = 10%: NPV = -$1,000 + $300 × 3.791 = $137
+At r = 15%: NPV = -$1,000 + $300 × 3.352 = $6
+At r = 20%: NPV = -$1,000 + $300 × 2.991 = -$103
+
+Notice: As r increases, NPV decreases. At r ≈ 15.2%, NPV = 0 (this is the IRR).
+
+6.5 NPV WITH DIFFERENT CASH FLOW PATTERNS
+--------------------------------------------------------------------------------
+
+Pattern 1: Simple Single Investment
+CF₀ = -I₀ (outflow)
+CF₁ to CFₙ = positive (inflows)
+
+This is the standard case.
+
+Pattern 2: Multiple Investments
+CF₀ = -I₀
+CF₁ = -I₁ (additional investment)
+CF₂ to CFₙ = positive
+
+Example: Construction project with phased investments
+
+Pattern 3: Investment with Salvage Value
+CF₀ = -I₀
+CF₁ to CFₙ₋₁ = operating cash flows
+CFₙ = operating CF + salvage value + working capital recovery
+
+Pattern 4: Replacement Decision
+CF₀ = -new equipment cost + salvage from old equipment (after-tax)
+CF₁ to CFₙ = incremental cash flows (new minus old)
+
+All patterns use the same NPV formula. Just ensure cash flows are incremental.
+
+6.6 NPV ADDITIVITY
+--------------------------------------------------------------------------------
+
+Fundamental Property:
+NPV(A + B) = NPV(A) + NPV(B)
+
+This means:
+- Firm value = Sum of NPVs of all projects
+- Can evaluate projects independently
+- Can decompose complex projects into components
+
+Example:
+Project A: NPV = $100
+Project B: NPV = $150
+Project A+B: NPV = $250
+
+Implication:
+If both projects are independent and have positive NPV, accept both.
+
+Note on Mutually Exclusive Projects:
+When projects are mutually exclusive (can only choose one), pick the one
+with highest NPV, not both.
+
+6.7 COMPREHENSIVE EXAMPLE: MANUFACTURING EXPANSION
+--------------------------------------------------------------------------------
+
+Scenario:
+Company considering expanding manufacturing capacity.
+
+Data:
+- Equipment cost: $5,000K (depreciated straight-line over 10 years)
+- Installation costs: $500K (also depreciated)
+- Initial inventory: $300K (working capital)
+- Annual revenue increase: $2,000K
+- Annual operating costs increase: $1,200K
+- Project life: 10 years
+- Salvage value: $1,000K (at end)
+- Tax rate: 30%
+- WACC: 12%
+
+Solution:
+
+Step 1: Calculate Annual Depreciation
+Depreciable basis = $5,000K + $500K = $5,500K
+Annual depreciation = $5,500K / 10 = $550K
+
+Step 2: Calculate Annual Operating Cash Flow (Years 1-10)
+Revenue: $2,000K
+Operating costs: -$1,200K
+Depreciation: -$550K
+EBIT: $250K
+Tax (30%): -$75K
+NOPAT: $175K
+Add back depreciation: +$550K
+Operating Cash Flow: $725K per year
+
+Step 3: Calculate Initial Investment (Year 0)
+Equipment: -$5,000K
+Installation: -$500K
+Working capital: -$300K
+Total: -$5,800K
+
+Step 4: Calculate Terminal Cash Flow (Year 10)
+Operating CF: $725K
+Salvage value (after-tax): $1,000K × (1 - 0.30) = $700K
+Working capital recovery: $300K
+Total Year 10 CF: $1,725K
+
+Step 5: Calculate NPV
+NPV = -$5,800K + $725K × PVAF(12%, 9) + $1,725K / (1.12)^10
+
+Where PVAF(12%, 9) = annuity factor for years 1-9
+PVAF = [1 - 1/(1.12)^9] / 0.12 = 5.328
+
+NPV = -$5,800K + $725K × 5.328 + $1,725K / 3.106
+NPV = -$5,800K + $3,863K + $555K
+NPV = -$1,382K
+
+Decision: REJECT (NPV < 0)
+
+The project destroys value despite positive cash flows because the return
+(which would be about 7-8%) is below the cost of capital (12%).
+
+6.8 COMMON STUDENT MISTAKES WITH NPV
+--------------------------------------------------------------------------------
+
+MISTAKE 1: Using wrong cash flows
+- Including sunk costs
+- Forgetting opportunity costs
+- Mixing accounting profit with cash flow
+
+MISTAKE 2: Wrong discount rate
+- Using promised interest rate instead of expected return
+- Using same rate for different risk projects
+- Not adjusting for project-specific risk
+
+MISTAKE 3: Sign errors
+- Forgetting that initial investment is negative
+- Incorrect signs on working capital changes
+
+MISTAKE 4: Timing errors
+- Discounting Year 0 cash flows (they're already in PV)
+- Off-by-one errors in period counting
+
+MISTAKE 5: Forgetting terminal flows
+- Omitting salvage value
+- Forgetting working capital recovery
+
+MISTAKE 6: Inconsistent assumptions
+- Nominal CFs with real discount rate
+- Pre-tax CFs with after-tax discount rate
+
+6.9 NPV STRENGTHS AND LIMITATIONS
+--------------------------------------------------------------------------------
+
+STRENGTHS:
+✓ Theoretically correct (measures value creation)
+✓ Accounts for time value of money
+✓ Accounts for all cash flows
+✓ Accounts for risk (through discount rate)
+✓ Additive property
+✓ Consistent with value maximization
+✓ Works with any cash flow pattern
+
+LIMITATIONS:
+✗ Requires estimate of discount rate (which can be uncertain)
+✗ Requires cash flow forecasts (which may be inaccurate)
+✗ Doesn't consider flexibility or real options
+✗ Hard to communicate (dollar value vs. return percentage)
+✗ Scale-dependent (favors large projects over high-return small projects)
+
+Despite limitations, NPV is the GOLD STANDARD for project evaluation.
+
+6.10 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching NPV:
+1. Start with simple examples (one initial outflow, constant inflows)
+2. Gradually add complexity (varying cash flows, terminal values, taxes)
+3. Emphasize that NPV measures VALUE CREATED, not return
+4. Work through complete examples with all components
+5. Show sensitivity to discount rate
+6. Compare to alternative metrics (covered in next sections)
+7. Stress that NPV should never be overridden by other rules
+
+Key Teaching Moment:
+Many students want to use IRR because it's a percentage. Explain that while
+IRR is intuitive, NPV is more reliable and should always take precedence when
+they conflict.
+
+Practice Exercise Types:
+- Calculate NPV from given cash flows
+- Construct cash flows from financial data
+- Determine breakeven values (what revenue/cost makes NPV = 0?)
+- Compare mutually exclusive projects
+- Evaluate sensitivity to assumptions
+
+================================================================================
+SECTION 7. INTERNAL RATE OF RETURN (IRR)
+================================================================================
+
+7.1 DEFINITION AND CONCEPT
+--------------------------------------------------------------------------------
+
+Internal Rate of Return (IRR) is the discount rate that makes NPV equal to zero.
+
+Mathematical Definition:
+IRR is the value of r that solves:
+0 = -I₀ + Σ [CFₜ / (1+r)^t]
+
+Or equivalently:
+I₀ = Σ [CFₜ / (1+IRR)^t]
+
+Economic Interpretation:
+IRR is the "break-even" return on the project. It's the rate at which:
+PV(Cash Inflows) = PV(Cash Outflows)
+
+Alternative names:
+- Yield to maturity (for bonds)
+- Money-weighted return (for portfolios)
+- Internal rate of return (for projects)
+
+7.2 THE IRR DECISION RULE
+--------------------------------------------------------------------------------
+
+IRR RULE:
+Accept project if IRR > required return (cost of capital)
+Reject project if IRR < required return
+
+Equivalently:
+Accept if IRR > r
+Reject if IRR < r
+
+Where r = discount rate (WACC or required return)
+
+Why This Makes Sense:
+If IRR > r: The project earns more than its cost of capital → value creation
+If IRR < r: The project earns less than its cost of capital → value destruction
+
+7.3 RELATIONSHIP BETWEEN NPV AND IRR
+--------------------------------------------------------------------------------
+
+Key Relationship:
+For standard cash flows (one sign change):
+- If IRR > r, then NPV > 0 (accept)
+- If IRR < r, then NPV < 0 (reject)
+- If IRR = r, then NPV = 0 (indifferent)
+
+Graphically:
+NPV decreases as discount rate increases.
+The IRR is where the NPV curve crosses zero.
+
+      NPV
+       |
+       |    \
+       |      \
+       |        \
+     0 |----------\---------> discount rate
+       |            \  IRR
+       |              \
+       |
+
+Example:
+Project: I₀ = -$1,000, CF₁ = $300, CF₂ = $400, CF₃ = $500
+
+At r = 0%: NPV = -$1,000 + $1,200 = $200
+At r = 5%: NPV = -$1,000 + $286 + $363 + $432 = $81
+At r = 10%: NPV = -$1,000 + $273 + $331 + $376 = -$20
+IRR ≈ 9.7% (between 5% and 10%)
+
+7.4 CALCULATING IRR
+--------------------------------------------------------------------------------
+
+Methods:
+
+METHOD 1: Trial and Error
+1. Try different discount rates
+2. Calculate NPV for each
+3. Narrow down until NPV ≈ 0
+
+METHOD 2: Financial Calculator
+Use built-in IRR function with cash flows.
+
+METHOD 3: Excel
+Use =IRR(values, [guess]) function
+Example: =IRR(A1:A11) where A1:A11 contains cash flows from period 0 to 10
+
+METHOD 4: Interpolation
+If NPV(r₁) > 0 and NPV(r₂) < 0, then r₁ < IRR < r₂
+
+Linear interpolation:
+IRR ≈ r₁ + [NPV(r₁) / (NPV(r₁) - NPV(r₂))] × (r₂ - r₁)
+
+METHOD 5: Solver (for complex cases)
+Use Excel Solver or similar optimization tools.
+
+Practical Note:
+In practice, always use Excel or financial calculator. Trial and error is
+for understanding, not for actual calculations.
+
+7.5 WHY IRR IS POPULAR
+--------------------------------------------------------------------------------
+
+REASON 1: Intuitive Communication
+"This project earns 25%" is easier to understand than "NPV = $432K"
+
+REASON 2: No Discount Rate Needed (Initially)
+Can calculate IRR without knowing required return, then compare.
+
+REASON 3: Comparable Across Sizes
+25% return sounds comparable whether project is $100K or $100M.
+
+REASON 4: Easy to Compare
+IRR > WACC is simple rule.
+
+REASON 5: Related to Return Metrics
+Similar to ROI, ROE, and other return measures managers know.
+
+Despite popularity, IRR has serious problems (covered next).
+
+7.6 PROBLEMS WITH IRR: MULTIPLE IRRs
+--------------------------------------------------------------------------------
+
+PROBLEM:
+When cash flows change sign more than once, there can be multiple IRRs.
+
+Example (Famous Problem):
+CF₀ = -$1,000
+CF₁ = +$5,000
+CF₂ = -$6,000
+
+Solving for IRR:
+0 = -1,000 + 5,000/(1+r) - 6,000/(1+r)²
+
+This quadratic equation has TWO solutions:
+IRR₁ = 25%
+IRR₂ = 200%
+
+Which one to use? Both make NPV = 0!
+
+Why Multiple IRRs Occur:
+Mathematically: Polynomial equations can have multiple roots
+Economically: Multiple periods with net outflows
+
+Real-World Example:
+Mining project with:
+- Initial investment (outflow)
+- Operating cash flows (inflows)
+- Environmental cleanup costs (outflow)
+
+Solution:
+Use NPV instead. NPV is always unique.
+
+7.7 PROBLEMS WITH IRR: NO IRR
+--------------------------------------------------------------------------------
+
+PROBLEM:
+Sometimes no IRR exists (no discount rate makes NPV = 0).
+
+Example:
+CF₀ = +$1,000 (receive money first)
+CF₁ = -$900 (pay back less later)
+
+This has positive NPV at ANY discount rate!
+There is no IRR (mathematically, it's complex/imaginary).
+
+Why No IRR:
+Cash flow pattern doesn't follow standard investment structure.
+
+Real-World Example:
+- Supplier gives you inventory upfront (inflow)
+- You pay later (outflow)
+- You pay less than you received (time value benefit)
+
+Solution:
+Use NPV. IRR rule doesn't work here.
+
+7.8 PROBLEMS WITH IRR: MUTUALLY EXCLUSIVE PROJECTS
+--------------------------------------------------------------------------------
+
+PROBLEM:
+IRR can rank mutually exclusive projects incorrectly.
+
+Example:
+Project A: I₀ = -$100, CF₁ = $150, IRR = 50%, NPV(10%) = $36
+Project B: I₀ = -$100, CF₁ = $60, CF₂ = $60, IRR = 20%, NPV(10%) = $4
+
+If r = 10% (cost of capital):
+IRR says: Choose A (50% > 20%)
+NPV says: Choose A ($36 > $4)
+Conclusion: Both agree, no problem here.
+
+But now consider:
+Project C: I₀ = -$100, CF₁ = $130, IRR = 30%, NPV(10%) = $18
+Project D: I₀ = -$500, CF₁ = $600, IRR = 20%, NPV(10%) = $45
+
+If r = 10%:
+IRR says: Choose C (30% > 20%)
+NPV says: Choose D ($45 > $18)
+
+CONFLICT! Which is right?
+
+Answer: NPV is right. Choose D.
+
+Why IRR Fails:
+IRR ignores scale. Project D creates more value even though return is lower.
+
+Fisher Separation:
+The discount rate at which NPV(C) = NPV(D) is called the crossover rate.
+Below this rate: D has higher NPV
+Above this rate: C has higher NPV
+
+IRR doesn't account for this relationship.
+
+7.9 PROBLEMS WITH IRR: SCALE PROBLEM
+--------------------------------------------------------------------------------
+
+PROBLEM:
+IRR favors small high-return projects over large moderate-return projects.
+
+Example:
+Project Small: I₀ = -$10K, NPV = $5K, IRR = 50%
+Project Large: I₀ = -$1,000K, NPV = $200K, IRR = 25%
+
+If capital is limited to choosing one:
+IRR says: Choose Small (50% > 25%)
+NPV says: Choose Large ($200K > $5K)
+
+Which creates more value? Large project by far.
+
+Analogy:
+Would you rather earn:
+- 50% return on $10? Profit = $5
+- 20% return on $1,000? Profit = $200
+
+Obviously the second option, even though return is lower.
+
+Conclusion:
+When comparing projects of different scales, use NPV, not IRR.
+
+7.10 PROBLEMS WITH IRR: TIMING PROBLEM
+--------------------------------------------------------------------------------
+
+PROBLEM:
+IRR doesn't account for when cash flows occur (except through discounting).
+
+Example:
+Project Early: CF₀ = -$100, CF₁ = $120, IRR = 20%
+Project Late: CF₀ = -$100, CF₁₀ = $619, IRR = 20%
+
+Both have IRR = 20%, but are they equivalent?
+
+At r = 10%:
+NPV(Early) = -$100 + $120/1.10 = $9
+NPV(Late) = -$100 + $619/(1.10)^10 = $139
+
+NPV(Late) is much better! But IRR doesn't show this.
+
+Why:
+IRR implicitly assumes reinvestment at the IRR rate, which may not be realistic.
+
+7.11 MODIFIED IRR (MIRR)
+--------------------------------------------------------------------------------
+
+Modified IRR attempts to address some IRR problems.
+
+Calculation:
+1. Find terminal value (TV) of all cash inflows, compounded at cost of capital
+2. Find present value (PV) of all cash outflows, discounted at cost of capital
+3. MIRR is the rate that equates PV of outflows to TV of inflows:
+
+PV(Outflows) × (1 + MIRR)^n = TV(Inflows)
+
+MIRR = [TV(Inflows) / PV(Outflows)]^(1/n) - 1
+
+Advantages:
+- Single unique solution
+- Assumes reinvestment at cost of capital (more realistic)
+- Can handle non-standard cash flows
+
+Disadvantages:
+- Less intuitive than IRR
+- Not as widely used
+- Still inferior to NPV for decision-making
+
+Bottom Line:
+MIRR is better than IRR, but NPV is better than both.
+
+7.12 IRR VS. NPV: WHEN THEY CONFLICT
+--------------------------------------------------------------------------------
+
+General Rule:
+When IRR and NPV give different recommendations, ALWAYS follow NPV.
+
+Situations Where Conflict Can Occur:
+1. Mutually exclusive projects
+2. Different project scales
+3. Different cash flow timing
+4. Non-standard cash flows (multiple sign changes)
+
+Why NPV Wins:
+- Measures value creation directly
+- No ambiguity
+- Always provides clear answer
+- Consistent with wealth maximization
+
+When IRR and NPV Agree:
+- Independent projects (accept all with NPV > 0 and IRR > r)
+- Standard cash flows (single sign change)
+- No capital constraints
+- Same scale projects
+
+7.13 PRACTICAL USE OF IRR
+--------------------------------------------------------------------------------
+
+Despite problems, IRR remains widely used in practice.
+
+Appropriate Uses:
+1. Quick screening of independent projects
+2. Communication to non-finance stakeholders
+3. Comparing to hurdle rates
+4. Benchmarking against other investments
+5. Sensitivity analysis (how returns change with assumptions)
+
+Best Practice:
+- Calculate BOTH NPV and IRR
+- Use NPV for final decision
+- Use IRR for communication and context
+- Be aware of IRR's limitations
+- If IRR seems strange, check for multiple IRRs or other issues
+
+Real-World Example:
+"This factory expansion has NPV of $50M and IRR of 18%, well above our 12%
+hurdle rate." (Uses both metrics effectively)
+
+7.14 COMPREHENSIVE EXAMPLE: NPV VS. IRR CONFLICT
+--------------------------------------------------------------------------------
+
+Scenario:
+Two mutually exclusive projects. Choose one.
+
+Project X:
+CF₀ = -$1,000
+CF₁ = $500
+CF₂ = $500
+CF₃ = $500
+
+Project Y:
+CF₀ = -$1,000
+CF₁ = $100
+CF₂ = $100
+CF₃ = $1,500
+
+Cost of capital: 10%
+
+Solution:
+
+Calculate IRR for Project X:
+0 = -$1,000 + $500/(1+r) + $500/(1+r)² + $500/(1+r)³
+This is an annuity: $1,000 = $500 × [1 - 1/(1+r)³] / r
+Solving: IRR(X) ≈ 23.4%
+
+Calculate IRR for Project Y:
+0 = -$1,000 + $100/(1+r) + $100/(1+r)² + $1,500/(1+r)³
+Solving numerically: IRR(Y) ≈ 19.7%
+
+IRR says: Choose Project X (23.4% > 19.7%)
+
+Calculate NPV for Project X at 10%:
+NPV(X) = -$1,000 + $500 × 2.487 = -$1,000 + $1,244 = $244
+
+Calculate NPV for Project Y at 10%:
+NPV(Y) = -$1,000 + $100/1.10 + $100/1.21 + $1,500/1.331
+NPV(Y) = -$1,000 + $91 + $83 + $1,127 = $301
+
+NPV says: Choose Project Y ($301 > $244)
+
+CONFLICT!
+
+Resolution:
+Follow NPV. Choose Project Y.
+It creates more value ($301 vs. $244) even though return is lower (19.7% vs. 23.4%).
+
+Intuition:
+Project Y has larger cash flow in Year 3, which is worth more in PV terms
+than the earlier cash flows of Project X, given the 10% cost of capital.
+
+7.15 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "IRR is the average return per year"
+REALITY: IRR is a complex average that accounts for timing and compounding.
+It's not a simple arithmetic average.
+
+MISCONCEPTION 2: "Higher IRR always means better project"
+REALITY: Higher IRR can be misleading when comparing projects of different
+scales or timing. NPV is the reliable metric.
+
+MISCONCEPTION 3: "If IRR > WACC, NPV must be positive"
+REALITY: True for standard cash flows. False if multiple IRRs exist.
+
+MISCONCEPTION 4: "IRR tells you how much money you'll make"
+REALITY: IRR is a percentage return, not a dollar amount. It doesn't indicate
+value created.
+
+MISCONCEPTION 5: "We should always maximize IRR"
+REALITY: We should maximize value (NPV), not return (IRR).
+
+7.16 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching IRR:
+1. Start by explaining it's where NPV = 0 (crossover point)
+2. Show graphically how IRR relates to NPV curve
+3. Demonstrate calculation using Excel
+4. Present simple examples where IRR = NPV agree
+5. Then show examples where they conflict
+6. Emphasize that NPV should always win conflicts
+7. Explain why IRR is still used (communication, intuition)
+8. Practice identifying situations with multiple IRRs
+
+Key Teaching Moment:
+Students often prefer IRR because percentages are familiar. Must convince them
+that dollars of value creation (NPV) matter more than percentage returns (IRR).
+
+Use analogies:
+"Would you rather have 100% return on $1 (earn $1) or 10% return on $1,000
+(earn $100)?"
+
+Critical Insight:
+IRR is not "wrong" - it's just less reliable than NPV. Use both, but when
+they conflict, trust NPV.
+
+================================================================================
+SECTION 8. PAYBACK PERIOD
+================================================================================
+
+8.1 DEFINITION
+--------------------------------------------------------------------------------
+
+Payback Period is the time required to recover the initial investment from
+project cash flows.
+
+Formula:
+Find T such that: Σ CFₜ ≥ I₀  for t = 1 to T
+
+In words:
+How many years until cumulative cash flows equal initial investment?
+
+Example:
+I₀ = -$1,000
+CF₁ = $300
+CF₂ = $400
+CF₃ = $500
+
+Cumulative CFs:
+Year 1: $300
+Year 2: $700 ($300 + $400)
+Year 3: $1,200 ($700 + $500)
+
+Payback occurs between Year 2 and Year 3.
+More precisely: 2 + ($1,000 - $700)/$500 = 2.6 years
+
+8.2 PAYBACK DECISION RULE
+--------------------------------------------------------------------------------
+
+PAYBACK RULE:
+Accept if payback period < cutoff period
+Reject if payback period > cutoff period
+
+Where cutoff is subjectively determined by management.
+
+Common Cutoffs:
+- Tech startups: 2-3 years
+- Manufacturing: 3-5 years
+- Real estate: 5-10 years
+- Infrastructure: 10-20 years
+
+Rationale:
+Managers want to recover investment quickly to reduce risk.
+
+8.3 WHY PAYBACK IS USED
+--------------------------------------------------------------------------------
+
+REASON 1: Simplicity
+Easy to calculate and understand.
+
+REASON 2: Liquidity Measure
+Indicates how quickly cash is recovered.
+
+REASON 3: Risk Proxy
+Shorter payback = less exposure to uncertainty.
+
+REASON 4: Practical in Uncertain Environments
+When distant future is very uncertain, focus on near-term cash flows.
+
+REASON 5: Quick Screening
+Eliminates clearly bad projects efficiently.
+
+REASON 6: Communication
+Easy to explain to non-finance stakeholders.
+
+8.4 PROBLEMS WITH PAYBACK
+--------------------------------------------------------------------------------
+
+PROBLEM 1: Ignores Time Value of Money
+Treats $100 in Year 1 the same as $100 in Year 5.
+
+Example:
+Project A: CF = $500/year for 2 years (payback = 2 years)
+Project B: CF = $1,000 in Year 1, $0 thereafter (payback = 1 year)
+
+Payback says B is better (shorter payback).
+But if Year 2 cash flows are discounted, comparison changes.
+
+PROBLEM 2: Ignores Cash Flows After Payback
+Doesn't consider what happens after investment is recovered.
+
+Example:
+Project A: I₀ = -$1,000, CF = $500/year for 3 years
+Project B: I₀ = -$1,000, CF = $500/year for 10 years
+
+Both have payback = 2 years.
+Payback says they're equivalent.
+But Project B is clearly better (7 extra years of cash flows)!
+
+PROBLEM 3: Arbitrary Cutoff
+No economic logic for choosing cutoff period.
+
+Why 3 years and not 4? No clear answer.
+
+PROBLEM 4: Inconsistent with Value Maximization
+Can accept negative NPV projects or reject positive NPV projects.
+
+Example:
+Project: I₀ = -$1,000, CF₁ = $1,200
+Payback = 0.83 years ✓ (very quick)
+But if r = 25%: NPV = -$1,000 + $1,200/1.25 = -$40 ✗ (negative!)
+
+Should accept based on payback, but destroys value!
+
+PROBLEM 5: Biases Against Long-Term Projects
+Discriminates against R&D, infrastructure, strategic investments.
+
+These often have long paybacks but high NPVs.
+
+8.5 DISCOUNTED PAYBACK PERIOD
+--------------------------------------------------------------------------------
+
+Discounted Payback addresses Problem 1 (ignores time value of money).
+
+Definition:
+Time required to recover initial investment from DISCOUNTED cash flows.
+
+Formula:
+Find T such that: Σ [CFₜ / (1+r)^t] ≥ I₀  for t = 1 to T
+
+Example:
+I₀ = -$1,000, r = 10%
+CF₁ = $300, CF₂ = $400, CF₃ = $500
+
+Discounted CFs:
+Year 1: $300/1.10 = $273
+Year 2: $400/1.21 = $331
+Year 3: $500/1.331 = $376
+
+Cumulative discounted CFs:
+Year 1: $273
+Year 2: $604 ($273 + $331)
+Year 3: $980 ($604 + $376)
+
+Never fully recovers $1,000 in PV terms → Discounted payback > 3 years
+
+Advantages Over Regular Payback:
+✓ Accounts for time value of money
+✓ More conservative
+
+Remaining Problems:
+✗ Still ignores cash flows after payback
+✗ Still uses arbitrary cutoff
+✗ Still not consistent with NPV
+
+Bottom Line:
+Discounted payback is better than regular payback but still inferior to NPV.
+
+8.6 WHEN PAYBACK MIGHT BE APPROPRIATE
+--------------------------------------------------------------------------------
+
+Situations Where Payback Can Be Useful:
+
+SITUATION 1: Very High Uncertainty
+When long-term forecasts are unreliable, focusing on near-term recovery
+makes sense.
+
+Example: Technology startups in rapidly changing markets
+
+SITUATION 2: Capital Rationing
+When company has limited access to capital, quick recovery allows
+reinvestment.
+
+SITUATION 3: Initial Screening
+Use as first pass to eliminate obviously bad projects before detailed analysis.
+
+SITUATION 4: Complement to NPV
+Report both metrics: "NPV is $5M with payback of 3 years."
+
+Best Practice:
+Use payback as a secondary metric or constraint, never as primary decision rule.
+
+Example:
+"Accept all projects with NPV > 0 AND payback < 5 years."
+
+This uses NPV for value assessment and payback as risk constraint.
+
+8.7 COMPREHENSIVE EXAMPLE: PAYBACK VS. NPV
+--------------------------------------------------------------------------------
+
+Scenario:
+Three mutually exclusive projects. Cost of capital = 12%.
+
+Project A:
+CF₀ = -$1,000
+CF₁ to CF₃ = $400 per year
+
+Project B:
+CF₀ = -$1,000
+CF₁ = $900
+CF₂ = $200
+
+Project C:
+CF₀ = -$1,000
+CF₁ = $100
+CF₂ = $200
+CF₃ to CF₁₀ = $200 per year
+
+Analysis:
+
+PAYBACK PERIODS:
+Project A: 2.5 years ($400 × 2.5 = $1,000)
+Project B: 1.5 years ($900 + $100 = $1,000 after 1.5 years)
+Project C: 3.5 years ($100 + $200 + $200×1.5 = $1,000)
+
+Payback ranking: B (best), A, C (worst)
+
+NPV at 12%:
+Project A: -$1,000 + $400 × 2.402 = -$1,000 + $961 = -$39
+Project B: -$1,000 + $900/1.12 + $200/1.25 = -$1,000 + $804 + $160 = -$36
+Project C: -$1,000 + $100/1.12 + $200/1.25 + $200 × 5.328 / 1.25
+         = -$1,000 + $89 + $160 + $852 = $101
+
+NPV ranking: C (best, only positive), B, A (worst)
+
+Conclusion:
+Payback says choose B.
+NPV says choose C (only one with positive NPV).
+
+Following payback would reject the only value-creating project!
+
+Intuition:
+Project C has long life (10 years) with steady cash flows. High NPV despite
+longer payback. Projects A and B have negative NPV because returns don't
+exceed cost of capital.
+
+8.8 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Shorter payback always means better project"
+REALITY: A project with 1-year payback and negative NPV destroys value.
+Payback doesn't measure value creation.
+
+MISCONCEPTION 2: "Discounted payback is equivalent to NPV"
+REALITY: Discounted payback still ignores cash flows after the payback period.
+
+MISCONCEPTION 3: "Companies that use payback are unsophisticated"
+REALITY: Many sophisticated companies use payback as a secondary criterion
+or risk measure, not as the primary decision rule.
+
+MISCONCEPTION 4: "Payback measures project return"
+REALITY: Payback measures time to recovery, not return or profitability.
+
+8.9 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching payback:
+1. Start by explaining the intuitive appeal
+2. Show how to calculate it (very simple)
+3. Then systematically introduce each problem
+4. Use examples where payback gives wrong answer
+5. Introduce discounted payback as partial improvement
+6. Emphasize it can complement NPV but should never override it
+7. Discuss real-world contexts where it's used
+
+Key Teaching Moment:
+Students often think payback is "obviously bad." Explain that it captures
+something real (speed of recovery, liquidity) but captures it imperfectly.
+It's not useless, just inferior to NPV.
+
+Example for Class Discussion:
+"Your startup has 2 years of runway. Should you use payback period? Why or
+why not?" (Answer: Yes as a constraint, but still maximize NPV subject to
+that constraint.)
+
+================================================================================
+SECTION 9. PROFITABILITY INDEX (PI)
+================================================================================
+
+9.1 DEFINITION
+--------------------------------------------------------------------------------
+
+Profitability Index (PI), also called Benefit-Cost Ratio, measures value
+created per dollar invested.
+
+Formula:
+PI = PV(Cash Inflows) / PV(Cash Outflows)
+
+Or equivalently:
+PI = PV(Cash Inflows) / Initial Investment
+
+Or in terms of NPV:
+PI = [Initial Investment + NPV] / Initial Investment
+PI = 1 + (NPV / Initial Investment)
+
+Example:
+Project: I₀ = -$1,000, PV(future CFs) = $1,300
+PI = $1,300 / $1,000 = 1.30
 
 Interpretation:
-- Debt is cheaper than equity due to tax deductibility of interest
-- Equity is riskier and requires a higher expected return
+For every $1 invested, we get back $1.30 in present value terms.
+Net gain: $0.30 per dollar invested.
+
+9.2 PI DECISION RULE
+--------------------------------------------------------------------------------
+
+PI RULE:
+Accept if PI > 1
+Reject if PI < 1
+
+Relationship to NPV:
+- PI > 1 ⟺ PV(Inflows) > PV(Outflows) ⟺ NPV > 0 ✓ Accept
+- PI < 1 ⟺ PV(Inflows) < PV(Outflows) ⟺ NPV < 0 ✗ Reject
+- PI = 1 ⟺ NPV = 0 (breakeven)
+
+Why PI = 1 is the cutoff:
+PI = 1 means PV(Inflows) = PV(Outflows), so NPV = 0.
+
+Advantage of PI:
+Normalizes for project size. Useful when comparing projects requiring
+different investments.
+
+9.3 PI VS. NPV FOR INDEPENDENT PROJECTS
+--------------------------------------------------------------------------------
+
+For INDEPENDENT projects (can accept multiple), PI and NPV always agree.
+
+Proof:
+PI > 1 ⟺ PV(Inflows)/PV(Outflows) > 1
+       ⟺ PV(Inflows) > PV(Outflows)
+       ⟺ NPV > 0
+
+Therefore:
+- All projects with PI > 1 also have NPV > 0 → Accept both
+- All projects with PI < 1 also have NPV < 0 → Reject both
+
+No conflict when projects are independent.
+
+9.4 PI VS. NPV FOR MUTUALLY EXCLUSIVE PROJECTS
+--------------------------------------------------------------------------------
+
+For MUTUALLY EXCLUSIVE projects (can only choose one), PI and NPV can conflict.
+
+Example:
+Project A: I₀ = -$100, PV(CFs) = $150, NPV = $50, PI = 1.50
+Project B: I₀ = -$1,000, PV(CFs) = $1,400, NPV = $400, PI = 1.40
+
+PI says: Choose A (1.50 > 1.40)
+NPV says: Choose B ($400 > $50)
+
+Which is correct?
+
+Answer: NPV is correct. Choose B.
+
+Why NPV Wins:
+Project B creates more absolute value ($400 vs. $50).
+PI focuses on relative return (per dollar), not absolute value creation.
+
+Analogy:
+Would you rather have:
+- 50% return on $100 (earn $50)
+- 40% return on $1,000 (earn $400)
+
+Obviously the second, even though return per dollar is lower.
+
+9.5 CAPITAL RATIONING AND PI
+--------------------------------------------------------------------------------
+
+Capital Rationing:
+When a firm cannot invest in all positive NPV projects due to limited capital.
+
+In this case, PI can be useful for RANKING projects.
+
+Strategy Under Capital Rationing:
+1. Calculate PI for all projects
+2. Rank projects by PI (highest first)
+3. Accept projects in order until capital is exhausted
+
+Why This Works:
+Maximizes value per dollar of limited capital.
+
+Example:
+Available capital: $1,000
+Projects:
+A: I₀ = -$400, NPV = $200, PI = 1.50
+B: I₀ = -$300, NPV = $120, PI = 1.40
+C: I₀ = -$500, NPV = $200, PI = 1.40
+D: I₀ = -$600, NPV = $180, PI = 1.30
+
+PI ranking: A, B, C, D
+
+Choose: A ($400) + B ($300) + part of C (only $300 available)
+Total NPV: $200 + $120 + $120 (60% of C's NPV) = $440
+
+This is better than choosing largest NPV projects (A + C: NPV = $400).
+
+Limitations:
+- Capital rationing itself is questionable (why not raise more capital if
+  projects have positive NPV?)
+- Doesn't account for divisibility (some projects can't be partially funded)
+- Doesn't account for multi-period capital constraints
+
+9.6 PI WITH MULTIPLE OUTFLOWS
+--------------------------------------------------------------------------------
+
+When project has outflows in multiple periods:
+
+Formula:
+PI = PV(All Inflows) / PV(All Outflows)
+
+Where outflows are discounted to time 0.
+
+Example:
+CF₀ = -$1,000 (outflow)
+CF₁ = -$200 (additional investment, outflow)
+CF₂ = $800 (inflow)
+CF₃ = $800 (inflow)
+r = 10%
+
+PV(Outflows) = $1,000 + $200/1.10 = $1,000 + $182 = $1,182
+PV(Inflows) = $800/1.21 + $800/1.331 = $661 + $601 = $1,262
+PI = $1,262 / $1,182 = 1.07 ✓ (Accept, PI > 1)
+
+NPV = $1,262 - $1,182 = $80 ✓ (Confirms: NPV > 0)
+
+9.7 STRENGTHS AND WEAKNESSES OF PI
+--------------------------------------------------------------------------------
+
+STRENGTHS:
+✓ Easy to interpret (bang for buck)
+✓ Accounts for time value of money
+✓ Consistent with NPV for independent projects
+✓ Useful for ranking under capital rationing
+✓ Normalizes for project size
+
+WEAKNESSES:
+✗ Can conflict with NPV for mutually exclusive projects
+✗ Doesn't measure absolute value creation
+✗ Can be misleading when comparing different scales
+✗ Less commonly used than NPV or IRR in practice
+✗ Requires careful handling of multiple outflows
+
+Bottom Line:
+PI is useful as a supplementary metric, especially for capital rationing, but
+NPV should be the primary decision criterion.
+
+9.8 COMPREHENSIVE EXAMPLE: PI APPLICATION
+--------------------------------------------------------------------------------
+
+Scenario:
+Company evaluating 4 projects. Total capital available: $2,000K.
+Cost of capital: 12%.
+
+Project A:
+CF₀ = -$800K
+CF₁ to CF₅ = $300K per year
+PV(CFs at 12%) = $300K × 3.605 = $1,082K
+NPV = $1,082K - $800K = $282K
+PI = $1,082K / $800K = 1.35
+
+Project B:
+CF₀ = -$600K
+CF₁ to CF₅ = $250K per year
+PV(CFs at 12%) = $250K × 3.605 = $901K
+NPV = $901K - $600K = $301K
+PI = $901K / $600K = 1.50
+
+Project C:
+CF₀ = -$1,000K
+CF₁ to CF₅ = $350K per year
+PV(CFs at 12%) = $350K × 3.605 = $1,262K
+NPV = $1,262K - $1,000K = $262K
+PI = $1,262K / $1,000K = 1.26
+
+Project D:
+CF₀ = -$700K
+CF₁ to CF₅ = $280K per year
+PV(CFs at 12%) = $280K × 3.605 = $1,009K
+NPV = $1,009K - $700K = $309K
+PI = $1,009K / $700K = 1.44
+
+Analysis:
+
+WITHOUT Capital Constraint:
+All projects have PI > 1 and NPV > 0 → Accept all
+Total investment: $3,100K (exceeds available $2,000K)
+Total NPV: $282K + $301K + $262K + $309K = $1,154K
+
+WITH Capital Constraint ($2,000K):
+
+Ranking by NPV (highest first):
+1. D: NPV = $309K
+2. B: NPV = $301K
+3. A: NPV = $282K
+4. C: NPV = $262K
+
+Choose: D ($700K) + B ($600K) + A ($800K) = $2,100K (exceeds budget)
+Actually choose: D + B + partial A? Or D + B only?
+D + B: Investment = $1,300K, NPV = $610K
+
+Ranking by PI (highest first):
+1. B: PI = 1.50
+2. D: PI = 1.44
+3. A: PI = 1.35
+4. C: PI = 1.26
+
+Choose: B ($600K) + D ($700K) + A ($800K) = $2,100K (exceeds budget)
+Actually choose: B + D = $1,300K, NPV = $610K
+Or: B + D + part of A (with $700K) = NPV = $610K + $247K = $857K
+
+PI approach gives better result: $857K vs. $610K
+
+This demonstrates PI's value under capital rationing.
+
+9.9 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "PI and NPV always give the same answer"
+REALITY: They agree for independent projects but can conflict for mutually
+exclusive projects.
+
+MISCONCEPTION 2: "Higher PI always means better project"
+REALITY: For mutually exclusive projects, highest NPV project may not have
+highest PI. Follow NPV.
+
+MISCONCEPTION 3: "PI measures return"
+REALITY: PI measures value per dollar invested, not return over time (that's IRR).
+
+MISCONCEPTION 4: "PI = 2 means 100% return"
+REALITY: PI = 2 means $2 in PV per $1 invested, which is $1 net gain per $1
+invested. But this is in PV terms, not an annual return.
+
+9.10 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching PI:
+1. Explain it as NPV per dollar invested
+2. Show that PI > 1 ⟺ NPV > 0
+3. Demonstrate calculation from cash flows
+4. Show agreement with NPV for independent projects
+5. Show potential conflict for mutually exclusive projects
+6. Explain use case: capital rationing
+7. Practice ranking exercises
+
+Key Teaching Moment:
+Students may wonder why we need PI if we have NPV. Explain:
+- Under unlimited capital, NPV is sufficient
+- Under capital rationing, PI helps rank projects
+- PI is intuitive (bang for buck)
+- But NPV should dominate for final decisions
+
+Useful Class Exercise:
+Give students capital rationing problem. Have them solve using:
+1. NPV ranking
+2. PI ranking
+Compare results. Show PI gives better outcome under constraint.
 
 ================================================================================
-SECTION 4. WACC AND RISK
+SECTION 10. COMPARING DECISION RULES - SUMMARY
+================================================================================
+
+10.1 DECISION RULES COMPARISON TABLE
 --------------------------------------------------------------------------------
-WACC increases with:
-- Higher business risk
-- Higher exposure to economic cycles
-- Higher equity beta
 
-WACC decreases with:
-- Higher tax rates
-- Moderate increases in leverage (before distress costs)
+| Metric   | Formula                    | Decision Rule      | Advantages | Disadvantages |
+|----------|----------------------------|--------------------|------------|---------------|
+| NPV      | Σ CFₜ/(1+r)^t - I₀         | Accept if NPV > 0  | Theoretically correct, measures value creation, works with any cash flow pattern | Requires discount rate estimate, dollar amount not % |
+| IRR      | Solve for r: NPV = 0       | Accept if IRR > r  | Intuitive (%), no discount rate needed initially | Multiple/no IRR, conflicts with NPV, ignores scale |
+| Payback  | Years to recover I₀        | Accept if < cutoff | Simple, measures liquidity/risk | Ignores TVM, ignores CFs after payback, arbitrary cutoff |
+| Disc PB  | Years to recover in PV     | Accept if < cutoff | Accounts for TVM | Still ignores CFs after payback, arbitrary cutoff |
+| PI       | PV(Inflows)/PV(Outflows)   | Accept if PI > 1   | Normalizes for size, useful under capital rationing | Can conflict with NPV, doesn't measure absolute value |
 
-Important:
-Managers cannot reduce systematic risk by changing leverage.
-Leverage redistributes risk between debt and equity.
+10.2 WHICH RULE TO USE? DECISION FLOWCHART
+--------------------------------------------------------------------------------
+
+START: Do you want to maximize firm value?
+│
+YES → Use NPV as PRIMARY decision criterion
+│
+├─ Calculate NPV
+│
+├─ Is NPV > 0?
+│   │
+│   ├─ YES → ACCEPT project (creates value)
+│   │
+│   └─ NO → REJECT project (destroys value)
+│
+└─ Optional: Calculate supplementary metrics for additional insight
+    │
+    ├─ IRR: For communication and comparing to benchmarks
+    │
+    ├─ Payback: As risk/liquidity check
+    │
+    └─ PI: If capital rationing or need to rank projects
+
+Special Cases:
+1. Capital rationing → Use PI to rank, then NPV to confirm
+2. Very high uncertainty → Payback as additional constraint
+3. Mutually exclusive projects → Always use NPV to choose
+4. Non-standard cash flows → Use only NPV (IRR unreliable)
+
+10.3 WHEN METRICS AGREE VS. DISAGREE
+--------------------------------------------------------------------------------
+
+WHEN ALL METRICS AGREE:
+- Independent project with standard cash flows (single sign change)
+- NPV > 0, IRR > r, Payback < cutoff, PI > 1
+- Decision is clear: ACCEPT
+
+WHEN METRICS DISAGREE:
+Common conflicts:
+1. NPV vs. IRR (mutually exclusive projects of different scales)
+2. NPV vs. Payback (long-term project with positive NPV but long payback)
+3. NPV vs. PI (large project with lower PI but higher NPV)
+
+Resolution Rule:
+ALWAYS follow NPV when metrics conflict.
+
+Why:
+NPV directly measures value creation, which is the firm's objective.
+Other metrics capture important aspects but can be misleading.
+
+10.4 REAL-WORLD PRACTICE
+--------------------------------------------------------------------------------
+
+Survey Evidence:
+Most firms use MULTIPLE metrics:
+- 75% use NPV
+- 75% use IRR
+- 57% use Payback
+- 12% use PI
+(Graham & Harvey survey of CFOs)
+
+Interpretation:
+- NPV and IRR are most common
+- Used together (not substitutes)
+- Payback as supplementary criterion
+- PI rarely used except in specific situations
+
+Best Practice in Industry:
+1. Calculate NPV (primary decision criterion)
+2. Calculate IRR (for communication and context)
+3. Report payback (as risk/liquidity measure)
+4. Present all three to management
+5. Make final decision based on NPV
+6. Use IRR and payback to explain the decision
+
+Example Management Report:
+"We recommend accepting Project Alpha. It has:
+- NPV of $15.3M (creates significant value)
+- IRR of 22% (well above our 12% hurdle rate)
+- Payback of 3.2 years (acceptable risk profile)
+All metrics support acceptance."
+
+10.5 TEACHING FRAMEWORK: HIERARCHY OF METRICS
+--------------------------------------------------------------------------------
+
+Think of decision rules as a hierarchy:
+
+TIER 1 (Gold Standard):
+- NPV: Theoretically correct, always reliable
+- Use for: Final decisions
+
+TIER 2 (Useful Complements):
+- IRR: Good for communication, can conflict with NPV
+- Use for: Context, benchmarking
+
+TIER 3 (Rough Screens):
+- Discounted Payback: Better than regular payback
+- PI: Useful for capital rationing
+- Use for: Initial screening, special situations
+
+TIER 4 (Seriously Flawed):
+- Regular Payback: Many problems, very limited use
+- Use for: Very rough liquidity check only
+
+Teaching Principle:
+Teach NPV first and thoroughly.
+Then introduce others as complements or alternatives, explaining their
+limitations relative to NPV.
+
+10.6 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "Different metrics are substitutes - pick your favorite"
+REALITY: NPV is theoretically superior. Others are complements, not substitutes.
+
+MISCONCEPTION 2: "If three metrics say accept and one says reject, go with majority"
+REALITY: If NPV says reject, reject. NPV should dominate.
+
+MISCONCEPTION 3: "Companies use the 'best' metric"
+REALITY: Companies use multiple metrics because each provides different
+information. IRR for communication, payback for risk, NPV for decisions.
+
+MISCONCEPTION 4: "More sophisticated firms only use NPV"
+REALITY: Even sophisticated firms use IRR and payback as supplementary tools.
+
+10.7 PRACTICE PROBLEMS FOR STUDENTS
+--------------------------------------------------------------------------------
+
+Problem Type 1: Independent Projects
+Given: Cash flows and discount rate
+Task: Calculate NPV, IRR, Payback, PI
+Question: Which projects should be accepted?
+Learning: When metrics agree (all positive NPV projects accepted)
+
+Problem Type 2: Mutually Exclusive Projects
+Given: Cash flows for two projects
+Task: Calculate all metrics, identify conflicts
+Question: Which project should be chosen?
+Learning: NPV wins conflicts
+
+Problem Type 3: Non-Standard Cash Flows
+Given: Project with multiple sign changes
+Task: Attempt to find IRR
+Learning: IRR may not exist or multiple IRRs may exist
+
+Problem Type 4: Capital Rationing
+Given: Multiple projects, limited budget
+Task: Rank by NPV vs. PI
+Question: Which combination maximizes value?
+Learning: PI useful for ranking under constraints
+
+Problem Type 5: Sensitivity Analysis
+Given: Base case assumptions
+Task: Calculate NPV under different scenarios
+Question: How robust is the decision?
+Learning: All metrics depend on assumptions
+
+10.8 TEACHING NOTES
+--------------------------------------------------------------------------------
+When teaching decision rules comparison:
+1. Present NPV first as the benchmark
+2. Introduce each alternative, explaining its appeal
+3. Systematically show each alternative's limitations
+4. Use examples where different metrics conflict
+5. Always resolve conflicts in favor of NPV
+6. Explain why multiple metrics are used in practice
+7. Emphasize decision hierarchy: NPV > IRR > Payback
+
+Effective Pedagogy:
+- Start simple (independent projects where metrics agree)
+- Add complexity (mutually exclusive, non-standard CFs)
+- Use real company examples
+- Have students calculate all metrics for same project
+- Discuss trade-offs and practical considerations
+
+Critical Message:
+"NPV is theoretically best, but other metrics provide useful information.
+Calculate multiple metrics, but when they conflict, follow NPV."
 
 ================================================================================
-SECTION 5. THREE WAYS TO COMPUTE WACC
---------------------------------------------------------------------------------
-1. Given cost of equity and cost of debt
-2. Given equity and debt betas (via CAPM)
-3. Using comparable companies
-
-All three approaches should give consistent answers if done correctly.
-
+SECTION 11. WEIGHTED AVERAGE COST OF CAPITAL (WACC)
 ================================================================================
-SECTION 6. COST OF EQUITY (CAPM)
---------------------------------------------------------------------------------
-Cost of equity is typically estimated using CAPM:
 
+11.1 WHAT IS WACC?
+--------------------------------------------------------------------------------
+
+Weighted Average Cost of Capital (WACC) is the average rate of return required
+by ALL investors (debt and equity) in a firm or project.
+
+Purpose:
+WACC is the discount rate used to value:
+- Free Cash Flows to the Firm (FCFF)
+- Enterprise value
+- Project cash flows (when leverage is stable)
+
+Key Insight:
+WACC represents the opportunity cost of capital for the firm's assets.
+
+Components:
+A firm has two types of investors:
+1. Debt holders (lenders)
+2. Equity holders (shareholders)
+
+Each requires a return commensurate with their risk.
+
+WACC weights these required returns by their proportions in the capital structure.
+
+11.2 THE WACC FORMULA
+--------------------------------------------------------------------------------
+
+Standard Formula:
+WACC = (E/V) × rE + (D/V) × rD × (1 - τ)
+
+Where:
+E = Market value of equity
+D = Market value of debt
+V = E + D = Total firm value (enterprise value)
+rE = Cost of equity (required return on equity)
+rD = Cost of debt (required return on debt)
+τ = Corporate tax rate
+
+Tax Shield:
+The (1 - τ) term reflects the tax deductibility of interest.
+Interest payments reduce taxable income, creating a tax shield.
+
+Interpretation:
+WACC is a weighted average where:
+- Weights are proportions of firm value (E/V and D/V)
+- Costs are required returns (rE and rD)
+- Debt cost is after-tax because interest is tax-deductible
+
+11.3 WHY WACC HAS TAX SHIELD
+--------------------------------------------------------------------------------
+
+Interest Tax Shield:
+Interest expense is tax-deductible.
+
+Example:
+EBIT = $1,000
+Interest = $100
+Tax rate = 30%
+
+Without Debt:
+Taxable income = $1,000
+Tax = $300
+After-tax cash flow to investors = $700
+
+With Debt:
+Taxable income = $1,000 - $100 = $900
+Tax = $270
+After-tax CF = $900 - $270 = $630 (to equity)
+Plus: Interest paid to debt holders = $100
+Total to all investors = $630 + $100 = $730
+
+Tax savings from debt = $30 = Interest × Tax rate
+
+Present Value of Tax Shield:
+If debt is permanent:
+PV(Tax Shield) = τ × D
+
+This is why we use after-tax cost of debt in WACC.
+
+Effective Cost of Debt:
+Before-tax cost: rD
+After-tax cost: rD × (1 - τ)
+
+Example:
+If rD = 8% and τ = 30%:
+After-tax cost = 8% × (1 - 0.30) = 5.6%
+
+11.4 CALCULATING COST OF EQUITY: CAPM
+--------------------------------------------------------------------------------
+
+Most Common Approach: Capital Asset Pricing Model (CAPM)
+
+CAPM Formula:
 rE = rF + βE × MRP
 
 Where:
-- rF = risk-free rate
-- βE = equity beta
-- MRP = market risk premium
+rF = Risk-free rate
+βE = Equity beta (systematic risk of equity)
+MRP = Market risk premium (expected market return - risk-free rate)
 
-Equity beta measures exposure to systematic market risk.
+Intuition:
+- rF: Compensation for time value of money
+- βE × MRP: Compensation for systematic risk
 
-================================================================================
-SECTION 7. COST OF DEBT
+Components Explained:
+
+1. Risk-Free Rate (rF):
+   - Use long-term government bond yield
+   - Match maturity to project/firm horizon
+   - Example: 10-year Treasury yield
+
+2. Equity Beta (βE):
+   - Measures sensitivity to market movements
+   - βE = 1: Moves with market
+   - βE > 1: More volatile than market (higher risk)
+   - βE < 1: Less volatile than market (lower risk)
+   
+   Estimation:
+   - Regression of stock returns on market returns
+   - Or use industry average
+   - Or use comparable companies
+
+3. Market Risk Premium (MRP):
+   - Expected excess return of market over risk-free rate
+   - Historical average: 5-8% (varies by period, geography)
+   - Most practitioners use 5-7% for U.S.
+
+Example Calculation:
+rF = 3%
+βE = 1.2
+MRP = 6%
+
+rE = 3% + 1.2 × 6% = 3% + 7.2% = 10.2%
+
+11.5 CALCULATING COST OF DEBT
 --------------------------------------------------------------------------------
-The cost of debt is the expected return required by lenders.
 
-In practice:
-- Often approximated using the yield to maturity (YTM) of outstanding bonds
-- Or the borrowing rate on bank loans
-- Or risk-free rate plus a default spread
+Cost of debt (rD) is the required return demanded by lenders.
 
-Important:
-Promised interest rate ≥ expected return to lenders (if default risk exists)
+Methods to Estimate:
 
-================================================================================
-SECTION 8. MARKET RISK PREMIUM (MRP)
+METHOD 1: Yield to Maturity (YTM)
+If firm has traded bonds:
+rD ≈ YTM on bonds
+
+Most direct method when available.
+
+METHOD 2: Bank Loan Rates
+If firm borrows from banks:
+rD = Interest rate on loans
+
+METHOD 3: Risk-Free Rate Plus Spread
+rD = rF + Credit Spread
+
+Credit spread depends on:
+- Credit rating
+- Default risk
+- Industry
+- Economic conditions
+
+Example spreads:
+AAA: +0.5%
+AA: +1.0%
+A: +1.5%
+BBB: +2.5%
+BB: +4%
+
+METHOD 4: Debt Beta Approach
+If debt is risky:
+rD = rF + βD × MRP
+
+Where βD = debt beta (usually << 1)
+
+Important Distinction:
+Promised yield ≥ Expected return
+
+If default risk exists, promised yield exceeds expected return because some
+promised payments may not be made.
+
+For corporate finance, we want expected return.
+
+Example:
+Firm promises 10% on bonds.
+Probability of default = 20%
+If default, recover 40% of face value.
+
+Expected return = 0.8 × 10% + 0.2 × (-60% loss) = 8% - 12% = -4%
+Wait, this needs proper calculation:
+
+Expected return = 0.8 × 10% + 0.2 × (40% - 100%) = 8% + 0.2 × (-60%) = 8% - 12% = -4%
+
+Actually:
+Expected return = 0.8 × 10% + 0.2 × [recovery - principal loss]
+Better: Expected return ≈ 10% × (1 - Expected Loss Rate)
+
+For practical purposes, if debt is investment grade (low default risk):
+rD ≈ YTM
+
+11.6 MARKET VALUES VS. BOOK VALUES
 --------------------------------------------------------------------------------
-The market risk premium is the expected excess return of the market over the risk-free rate.
 
-Common estimation approaches:
-1. Historical averages (most common)
-2. Surveys of investors
-3. Dividend growth models (least common)
+CRITICAL: WACC requires MARKET VALUES, not book values.
 
-MRP is the least precisely estimated input in WACC.
+Why:
+Market values reflect current opportunity costs.
+Book values are historical and don't reflect current prices.
 
-================================================================================
-SECTION 9. BETA: ECONOMIC MEANING
+Market Value of Equity:
+E = Share price × Number of shares outstanding
+
+Simple and observable for public companies.
+
+Market Value of Debt:
+More challenging:
+
+If bonds are traded:
+D = Market price of bonds × Number of bonds
+
+If bonds aren't traded:
+Approximate: Use book value as proxy
+Better: Estimate present value of promised payments at current yield
+
+Example:
+Book value of debt = $100M (face value)
+Current market yield for similar debt = 8%
+Original coupon rate = 6%
+If bonds selling below par:
+Market value < Book value
+
+Rule of Thumb:
+If interest rates have risen since debt issued → Market value < Book value
+If interest rates have fallen → Market value > Book value
+
+For simplicity, many practitioners use book value of debt if:
+- Debt is not publicly traded
+- Debt was issued recently
+- Interest rates haven't changed much
+
+But theoretically, market value is correct.
+
+11.7 COMPREHENSIVE WACC CALCULATION EXAMPLE
 --------------------------------------------------------------------------------
-Beta measures systematic risk:
-- Sensitivity of asset returns to market returns
 
-Beta does NOT measure:
-- Total volatility
-- Firm-specific risk (which can be diversified)
+Scenario:
+Calculate WACC for TechCorp.
 
-Beta is estimated using regressions, but estimates are noisy.
+Given Data:
+- Stock price: $50 per share
+- Shares outstanding: 10 million
+- Equity beta: 1.3
+- Bonds outstanding: $200M face value, trading at 95% of par
+- Bond YTM: 7%
+- Risk-free rate: 3%
+- Market risk premium: 6%
+- Corporate tax rate: 25%
 
-================================================================================
-SECTION 10. LEVERAGE AND SYSTEMATIC RISK
---------------------------------------------------------------------------------
-Key principle: Conservation of systematic risk
+Solution:
 
-Asset (unlevered) beta:
-βA = (E/V)βE + (D/V)βD
+Step 1: Calculate Market Value of Equity
+E = $50 × 10M shares = $500M
 
-Leverage increases equity beta:
-βE = βU + (D/E)(βU − βD)
+Step 2: Calculate Market Value of Debt
+D = $200M × 0.95 = $190M
 
-If debt is approximately risk-free:
-βE ≈ βU × (1 + D/E)
+Step 3: Calculate Total Firm Value
+V = E + D = $500M + $190M = $690M
+
+Step 4: Calculate Weights
+E/V = $500M / $690M = 72.5%
+D/V = $190M / $690M = 27.5%
+
+Step 5: Calculate Cost of Equity (using CAPM)
+rE = rF + βE × MRP
+rE = 3% + 1.3 × 6% = 3% + 7.8% = 10.8%
+
+Step 6: Cost of Debt
+rD = YTM = 7%
+
+Step 7: Calculate WACC
+WACC = (E/V) × rE + (D/V) × rD × (1 - τ)
+WACC = 0.725 × 10.8% + 0.275 × 7% × (1 - 0.25)
+WACC = 7.83% + 0.275 × 5.25%
+WACC = 7.83% + 1.44%
+WACC = 9.27%
 
 Interpretation:
-Leverage magnifies equity risk without changing asset risk.
+TechCorp's average cost of capital is 9.27%.
+Projects must earn at least 9.27% to create value (NPV > 0).
 
-================================================================================
-SECTION 11. UNLEVERING AND RELEVERING BETAS
+Sensitivity:
+What if tax rate were 30% instead?
+WACC = 0.725 × 10.8% + 0.275 × 7% × (1 - 0.30)
+WACC = 7.83% + 1.35% = 9.18%
+(Lower tax rate slightly increases WACC because tax shield is less valuable)
+
+11.8 WACC AND LEVERAGE
 --------------------------------------------------------------------------------
-Step 1: Unlever comparable firm beta
-βU = (E/V)βE + (D/V)βD
 
-Step 2: Relever using target capital structure
-βE,target = βU + (D/E)target × (βU − βD)
+Key Principle:
+As leverage (D/E) changes, WACC changes.
 
-This allows estimation of project or firm-specific discount rates.
+Two Opposing Effects:
 
-================================================================================
-SECTION 12. USING COMPARABLE COMPANIES
+EFFECT 1: Debt is Cheaper Than Equity
+rD < rE (because debt is less risky)
+→ More debt should lower WACC
+
+EFFECT 2: Leverage Increases Equity Risk
+As D/E rises, equity becomes riskier
+→ rE increases, which raises WACC
+
+Net Effect:
+At low levels of leverage: Effect 1 dominates → WACC decreases
+At high levels of leverage: Effect 2 dominates → WACC increases
+
+Optimal Capital Structure:
+The leverage ratio that minimizes WACC.
+
+Graph (Conceptual):
+    WACC
+      |
+      |     \
+      |      \
+      |       \___
+      |           \___/  ← Minimum WACC
+      |               \
+      |                 \
+      |____________________
+                      D/E
+
+Important Caveat:
+Above analysis ignores financial distress costs.
+At very high leverage, probability of bankruptcy increases, raising costs further.
+
+11.9 LEVERAGE AND BETA
 --------------------------------------------------------------------------------
-When a firm lacks reliable beta estimates:
-- Use comparable firms in the same industry
-- Unlever their betas
-- Average asset betas
-- Relever using target capital structure
 
-This is standard practice in valuation.
+Fundamental Relationship:
+βAsset = (E/V) × βE + (D/V) × βD
 
-================================================================================
-SECTION 13. PROJECT DISCOUNT RATES
+This is conservation of systematic risk.
+The asset beta (risk of the business) equals the weighted average of debt and
+equity betas.
+
+If debt is approximately risk-free (βD ≈ 0):
+βAsset ≈ (E/V) × βE
+
+Rearranging for equity beta:
+βE = βAsset × (V/E)
+βE = βAsset × (1 + D/E)  [if βD = 0]
+
+More generally (if βD ≠ 0):
+βE = βAsset + (D/E) × (βAsset - βD)
+
+This is the RELEVERING formula.
+
+Key Insight:
+Leverage increases equity beta (and hence cost of equity) but doesn't change
+asset beta (business risk is unchanged).
+
+Example:
+Unlevered firm (no debt):
+βAsset = 1.0
+βE = 1.0 (same as asset beta when no debt)
+
+After leveraging to D/E = 0.5 (assuming βD = 0):
+βE = 1.0 × (1 + 0.5) = 1.5
+rE increases proportionally
+
+But βAsset remains 1.0 (business risk unchanged).
+
+11.10 UNLEVERING AND RELEVERING BETAS
 --------------------------------------------------------------------------------
-Rule:
-Cash flows must be discounted at a rate appropriate to their risk.
+
+Practical Application:
+When estimating cost of equity for a project or firm using comparables.
+
+Process:
+
+STEP 1: Find Comparable Companies
+Identify firms in same industry/business.
+
+STEP 2: Unlever Their Betas
+For each comparable, calculate asset beta:
+βAsset = βE / (1 + (1-τ) × D/E)
+
+Or if considering debt beta:
+βAsset = [βE + βD × (D/E)] / [1 + D/E]
+
+STEP 3: Average Asset Betas
+βAsset, average = Average of unlevered betas from comparables
+
+STEP 4: Relever Using Target Capital Structure
+Using target D/E for the project/firm:
+βE, target = βAsset × [1 + (1-τ) × (D/E)target]
+
+STEP 5: Calculate Cost of Equity
+rE = rF + βE, target × MRP
+
+STEP 6: Calculate WACC
+Using target capital structure.
+
+Why This Works:
+- Asset beta reflects business risk (independent of capital structure)
+- Equity beta reflects both business risk and financial risk (leverage)
+- By unlevering and relevering, we separate these effects
+
+Example:
+
+Comparable firms in retail industry:
+Company A: βE = 1.2, D/E = 0.3, τ = 25%
+Company B: βE = 1.4, D/E = 0.5, τ = 25%
+Company C: βE = 1.1, D/E = 0.2, τ = 25%
+
+Unlever each:
+βA,asset = 1.2 / [1 + (1-0.25) × 0.3] = 1.2 / 1.225 = 0.98
+βB,asset = 1.4 / [1 + 0.75 × 0.5] = 1.4 / 1.375 = 1.02
+βC,asset = 1.1 / [1 + 0.75 × 0.2] = 1.1 / 1.15 = 0.96
+
+Average: βAsset = (0.98 + 1.02 + 0.96) / 3 = 0.99
+
+Now, relevering for our firm with D/E = 0.4:
+βE,target = 0.99 × [1 + 0.75 × 0.4] = 0.99 × 1.30 = 1.29
+
+Use this for cost of equity:
+If rF = 3% and MRP = 6%:
+rE = 3% + 1.29 × 6% = 10.74%
+
+11.11 PROJECT-SPECIFIC WACC
+--------------------------------------------------------------------------------
+
+Key Principle:
+Use discount rate appropriate to the risk of the cash flows.
 
 Implication:
-- Do NOT automatically use firm WACC for all projects
-- Projects with different risk profiles require different discount rates
+Do NOT automatically use firm-wide WACC for all projects.
 
-Otherwise:
-Identical projects would have different values depending on ownership,
-which is inconsistent with market pricing.
+When Firm WACC is Appropriate:
+- Project has same risk as firm's average operations
+- Project has similar leverage as firm
+- Project is in firm's core business
+
+When Project-Specific WACC is Needed:
+- Project in different industry (different business risk)
+- Project has different operating leverage
+- Project requires different capital structure
+
+Process for Project WACC:
+
+STEP 1: Identify project's business risk
+Find comparable firms in project's industry.
+
+STEP 2: Estimate project's asset beta
+Unlever comparables' betas, average them.
+
+STEP 3: Determine project's target leverage
+May differ from firm's leverage.
+
+STEP 4: Calculate project's equity beta
+Relever asset beta using project's target leverage.
+
+STEP 5: Calculate project WACC
+Using project-specific rE and capital structure.
+
+Example:
+
+TechCorp (software, WACC = 10%) considering opening retail stores.
+
+Firm WACC: 10%
+Project (retail) WACC: ?
+
+Retail comparables have average βAsset = 0.8
+TechCorp's βAsset = 1.3
+
+Using firm WACC (10%) for retail project would be WRONG.
+Retail is lower risk than software.
+
+Correct approach:
+βRetail,asset = 0.8 (from comparables)
+Relever using TechCorp's leverage: βE = 0.8 × (1 + D/E)
+Calculate rE,retail = rF + βE × MRP
+Calculate WACCretail < 10%
+
+Result: Retail project should use lower discount rate than firm average.
+
+11.12 MARGINAL vs. AVERAGE WACC
+--------------------------------------------------------------------------------
+
+Marginal WACC:
+Cost of raising one additional dollar of capital.
+
+Average WACC:
+Weighted average cost of all capital currently in place.
+
+For Valuation: Use marginal WACC
+(the cost of new capital for new projects)
+
+Why:
+New projects are funded with new capital, not old capital.
+
+Practical Issue:
+Marginal and average WACC are often similar, so many use average as proxy.
+
+When They Differ:
+- Interest rates have changed since debt was issued
+- Firm's credit rating has changed
+- Capital structure has shifted
+
+Example:
+Firm issued debt 5 years ago at 6%.
+Current market rate for similar debt: 8%.
+
+Average rD (including old debt): 6.5%
+Marginal rD (for new debt): 8%
+
+For new projects: Use 8%, not 6.5%.
+
+11.13 WACC LIMITATIONS AND ALTERNATIVES
+--------------------------------------------------------------------------------
+
+WACC Assumes:
+1. Constant leverage (D/V ratio remains stable)
+2. Perpetual debt (tax shields are permanent)
+3. No financial distress costs
+4. Same risk for all cash flows
+
+When WACC Fails:
+
+SITUATION 1: Changing Leverage Over Time
+If D/V ratio changes significantly:
+→ Use Adjusted Present Value (APV) method instead
+
+APV = NPV(unlevered) + PV(Tax Shields) - PV(Financial Distress Costs)
+
+SITUATION 2: Project Has Different Risk Than Firm
+→ Use project-specific WACC (covered above)
+
+SITUATION 3: Tax Rate Changes
+If τ changes over time:
+→ Adjust WACC for each period or use APV
+
+SITUATION 4: Firm is Not Public (No Equity Beta)
+→ Use industry average beta or comparables
+
+Alternatives to WACC:
+
+1. APV (Adjusted Present Value):
+   - Value project as if all-equity
+   - Add value of tax shields separately
+   - Useful when leverage changes
+
+2. FCFE (Flow to Equity):
+   - Discount cash flows to equity at rE
+   - Use when directly valuing equity (not entire firm)
+
+3. Risk-Adjusted Discount Rates:
+   - Different discount rates for different components
+   - Use when cash flows have very different risk profiles
+
+Bottom Line:
+WACC is the workhorse but not universal. Use appropriate method for the situation.
+
+11.14 COMMON WACC CALCULATION ERRORS
+--------------------------------------------------------------------------------
+
+ERROR 1: Using Book Values Instead of Market Values
+WRONG: D = book value of debt
+RIGHT: D = market value of debt (or proxy with book if unavailable)
+
+ERROR 2: Forgetting Tax Shield on Debt
+WRONG: WACC = (E/V) × rE + (D/V) × rD
+RIGHT: WACC = (E/V) × rE + (D/V) × rD × (1 - τ)
+
+ERROR 3: Using Coupon Rate as Cost of Debt
+WRONG: rD = coupon rate on bonds
+RIGHT: rD = current YTM or market rate for similar debt
+
+ERROR 4: Using Firm Beta Without Adjusting for Leverage
+WRONG: Use βE from comparable with different leverage
+RIGHT: Unlever, then relever using target leverage
+
+ERROR 5: Weights Don't Sum to 1
+Check: (E/V) + (D/V) should equal 1.0
+
+ERROR 6: Inconsistent Tax Rates
+If debt is after-tax and equity is pre-tax, comparison is invalid.
+Use same tax treatment.
+
+ERROR 7: Using Historical MRP Instead of Forward-Looking
+WRONG: MRP based on past 100 years
+BETTER: MRP based on current expectations or recent history
+
+ERROR 8: Circular Reasoning in Valuation
+V = PV(CFs at WACC)
+But WACC depends on V (through weights E/V and D/V)!
+
+Solution: Iterate until consistent.
+
+11.15 COMPREHENSIVE PROBLEM: WACC FOR PROJECT EVALUATION
+--------------------------------------------------------------------------------
+
+Scenario:
+Manufacturing company evaluating new product line.
+
+Firm Data:
+- Current stock price: $40
+- Shares outstanding: 50M
+- Market value of debt: $800M
+- Firm's equity beta: 1.5
+- Firm's D/E ratio: 0.8
+- YTM on firm's bonds: 6%
+- Tax rate: 30%
+
+Market Data:
+- Risk-free rate: 4%
+- Market risk premium: 5.5%
+
+Project Data:
+- Expected to have same risk as firm's existing operations
+- Will maintain firm's target leverage (D/E = 0.8)
+
+Question: What WACC should be used for this project?
+
+Solution:
+
+Step 1: Calculate Market Value of Equity
+E = $40 × 50M = $2,000M
+
+Step 2: Market Value of Debt (given)
+D = $800M
+
+Step 3: Total Firm Value
+V = E + D = $2,000M + $800M = $2,800M
+
+Step 4: Verify D/E ratio
+D/E = $800M / $2,000M = 0.4
+
+Wait, problem states D/E = 0.8. Let me recalculate.
+
+If D/E = 0.8, then D = 0.8E
+Given D = $800M:
+E = $800M / 0.8 = $1,000M
+
+This means stock price × shares ≠ given values. Use the D/E ratio as more
+reliable for this problem.
+
+Recalculating:
+D = $800M
+D/E = 0.8, so E = $800M / 0.8 = $1,000M
+V = $1,800M
+
+Weights:
+D/V = $800M / $1,800M = 44.4%
+E/V = $1,000M / $1,800M = 55.6%
+
+Step 5: Calculate Cost of Equity
+βE = 1.5 (given)
+rE = rF + βE × MRP
+rE = 4% + 1.5 × 5.5% = 4% + 8.25% = 12.25%
+
+Step 6: Cost of Debt
+rD = 6% (YTM given)
+
+Step 7: Calculate WACC
+WACC = (E/V) × rE + (D/V) × rD × (1 - τ)
+WACC = 0.556 × 12.25% + 0.444 × 6% × (1 - 0.30)
+WACC = 6.81% + 0.444 × 4.2%
+WACC = 6.81% + 1.86%
+WACC = 8.67%
+
+Answer: Use 8.67% as the discount rate for this project.
+
+Check:
+- Project has same risk as firm → Use firm's betas
+- Project maintains firm's leverage → Use firm's weights
+- Therefore, use firm's WACC
+
+If project had different risk, we'd need to unlever firm's beta, use
+comparable companies, and re-calculate.
+
+11.16 COMMON STUDENT MISCONCEPTIONS
+--------------------------------------------------------------------------------
+
+MISCONCEPTION 1: "More debt always lowers WACC"
+REALITY: While debt is cheaper, it increases equity risk (βE and rE rise).
+Net effect depends on leverage level.
+
+MISCONCEPTION 2: "WACC is the return the firm earns"
+REALITY: WACC is the return REQUIRED by investors. Actual return may differ.
+
+MISCONCEPTION 3: "Use historical returns to estimate WACC components"
+REALITY: WACC requires forward-looking expected returns, not past returns.
+
+MISCONCEPTION 4: "All projects in a firm should use same WACC"
+REALITY: Projects with different risk require different discount rates.
+
+MISCONCEPTION 5: "Book value and market value of debt are same"
+REALITY: They can differ significantly if interest rates have changed.
+
+MISCONCEPTION 6: "Higher WACC is better for the firm"
+REALITY: Higher WACC means capital is more expensive. Lower WACC (without
+increasing risk) is better.
+
+MISCONCEPTION 7: "Tax shield makes debt always better than equity"
+REALITY: Excessive debt increases financial distress costs and equity risk.
+
+11.17 TEACHING NOTES FOR WACC
+--------------------------------------------------------------------------------
+
+When teaching WACC:
+1. Start with intuition: Average cost of all capital sources
+2. Explain why weights must be market values
+3. Derive formula component by component
+4. Explain tax shield carefully (most confusing part)
+5. Work through complete numerical examples
+6. Show sensitivity to leverage
+7. Explain unlevering/relevering (crucial practical skill)
+8. Discuss project-specific vs. firm-wide WACC
+9. Connect back to NPV (WACC is the discount rate)
+
+Effective Pedagogy:
+- Use visualization: Pie chart showing E/V and D/V
+- Show WACC calculation in spreadsheet step-by-step
+- Compare WACC for firms with different leverage
+- Practice unlevering/relevering with real companies
+- Discuss when WACC is appropriate vs. alternatives
+
+Common Teaching Challenges:
+1. Students confuse book vs. market values
+2. Tax shield concept is unintuitive
+3. Beta levering/unlevering formulas are complex
+4. Circular reasoning in valuation (V depends on WACC, WACC depends on V)
+
+Solutions:
+1. Emphasize market values repeatedly with examples
+2. Show tax shield benefit numerically
+3. Work through levering/unlevering multiple times
+4. Explain iteration or using target weights
+
+Critical Concepts to Emphasize:
+- WACC reflects opportunity cost of capital
+- Higher risk → Higher WACC → Lower PV
+- Cannot change WACC to make project look better
+- WACC assumes constant leverage
+- Use project-specific WACC when appropriate
 
 ================================================================================
-SECTION 14. TAX ADJUSTMENTS AND LIMITATIONS
---------------------------------------------------------------------------------
-Standard WACC:
-- Accounts only for corporate taxes
-- Ignores investor-level taxes
+CONCLUSION: KEY TAKEAWAYS FOR TUTOR AI
+================================================================================
 
-WACC assumes:
-- Constant leverage
-- Stable tax shields
+CORE PRINCIPLES:
+1. NPV is the gold standard for investment decisions
+2. Cash flows, not accounting profits, determine value
+3. Time value of money is fundamental
+4. Risk determines discount rates
+5. WACC is the appropriate discount rate for most projects
 
-If leverage changes over time:
-→ Use APV or FCFE instead
+COMMON STUDENT STRUGGLES:
+- Distinguishing cash flows from accounting profits
+- Understanding opportunity costs
+- Applying the right discount rate
+- Choosing among decision rules when they conflict
+- Calculating WACC correctly (market vs. book values, tax shields)
+
+PEDAGOGICAL APPROACH:
+- Build intuition before formulas
+- Use real-world examples extensively
+- Address misconceptions explicitly
+- Connect concepts across topics
+- Emphasize "why" before "how"
+
+DECISION HIERARCHY:
+1. Use NPV as primary criterion
+2. Supplement with IRR for communication
+3. Consider payback for risk assessment
+4. Use PI for capital rationing
+5. Always follow NPV when metrics conflict
 
 ================================================================================
-SECTION 15. PRACTICAL INPUT CHOICES
---------------------------------------------------------------------------------
-Risk-free rate:
-- Long-term government bonds for long-term projects
-
-Debt:
-- Market value if available
-- Book value as proxy if not traded
-
-Equity:
-- Market capitalization
-
-Beta:
-- Prefer industry averages over individual estimates
-
+END OF COMPREHENSIVE KNOWLEDGE BASE
 ================================================================================
-SECTION 16. ACCURACY AND LIMITATIONS
---------------------------------------------------------------------------------
-Sources of error:
-- Beta estimation error (±0.3 common)
-- MRP uncertainty
-- CAPM model limitations
-
-Despite imperfections:
-WACC remains the workhorse discount rate in corporate finance.
-
-================================================================================
-SECTION 17. KEY TAKEAWAYS
---------------------------------------------------------------------------------
-- WACC is the correct discount rate for FCFF when leverage is stable
-- Risk determines discount rates
-- Leverage reallocates risk but does not eliminate it
-- Comparable firms are critical in practice
-- Using the wrong discount rate destroys value
-
-
